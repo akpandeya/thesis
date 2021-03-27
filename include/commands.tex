@@ -1,0 +1,91 @@
+%%% Referencing, file structure
+\newcommand{\chapterprefix}{}
+\newcommand{\chapterpath}{}
+\newcommand{\includechapter}[2]{
+    \renewcommand{\chapterprefix}{#1}
+    \renewcommand{\chapterpath}{#2}
+    \input{chapters/\chapterpath}
+}
+
+\newcommand{\includeappendix}[2]{
+    \renewcommand{\chapterprefix}{#1}
+    \renewcommand{\chapterpath}{#2}
+    \input{appendices/\chapterpath}
+}
+
+
+\newcommand{\tlabel}[1]{\label{\chapterprefix:#1}}
+\newcommand{\tref}[1]{\cref{\chapterprefix:#1}}
+\newcommand{\Tref}[1]{\Cref{\chapterprefix:#1}}
+\newcommand{\labeltref}[1]{\labelcref{\chapterprefix:#1}}
+\newcommand{\refandpage}[1]{\cref{#1} on \cpageref{#1}}
+\newcommand{\labelrefandpage}[1]{\labelcref{#1} on \cpageref{#1}}
+
+
+%%% Figures
+% options, filename
+\renewcommand{\igopt}[2]{\includegraphics[#1]{\chapterpath/#2}}
+
+% width, filename, label, caption
+\renewcommand{\figopt}[4]{
+    \begin{figure}[t]
+        \centering
+        \ig{#1}{#2}
+        \caption{#4}
+        \tlabel{#3}
+    \end{figure}
+}
+
+% width, filename, caption
+\renewcommand{\fig}[3]{
+    \figopt{#1}{#2}{#2}{#3}
+}
+
+% w1, f1, l1, c1, w2, f2, l2, c2, main caption
+\renewcommand{\doublefigopt}[9]{
+    \begin{figure}[t]
+        \centering
+        \ifstrempty{#4}{
+            \subfloat{
+                \ig{#1}{#2}
+                \tlabel{#3}
+            }
+        }{
+            \subfloat[#4]{
+                \ig{#1}{#2}
+                \tlabel{#3}
+            }
+        }
+        \qquad
+        \ifstrempty{#8}{
+            \subfloat{
+                \ig{#5}{#6}
+                \tlabel{#7}
+            }
+        }{
+            \subfloat[#8]{
+                \ig{#5}{#6}
+                \tlabel{#7}
+            }
+        }
+        \caption{#9}
+    \end{figure}
+}
+
+% w1, f1, c1, w2, f2, c2, main caption
+\renewcommand{\doublefig}[7]{\doublefigopt{#1}{#2}{#2}{#3}{#4}{#5}{#5}{#6}{#7}}
+
+% sidefigure (width, file, caption)
+\newcommand{\sidefig}[3]{
+    \begin{figure}
+        \fcapside[\FBwidth]{\caption{\tlabel{#2}#3}}{\hspace{5mm}\igopt{width=#1}{#2}}
+    \end{figure}
+}
+
+\newcommand{\sfA}{\textbf{(a)}}
+\newcommand{\sfB}{\textbf{(b)}}
+\newcommand{\sfC}{\textbf{(c)}}
+\newcommand{\sfD}{\textbf{(d)}}
+
+%%% correct quotation marks
+\newcommand{\qu}[1]{``#1''}

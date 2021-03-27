@@ -1,0 +1,244 @@
+%%% Pre-documentclass hacks
+
+% warn about LaTeX 'sins'
+\RequirePackage[l2tabu, orthodox]{nag}
+
+% Silence harmless KOMA warnings about 13pt.
+% see: http://tex.stackexchange.com/q/240992/42128
+\RequirePackage{silence}
+\WarningFilter{scrbook}{Using fallback calculation to setup font sizes}
+\WarningFilter{latexfont}{Font shape `OT1/cmr/m/n' in size <13> not available}
+\WarningFilter{latexfont}{Size substitutions with differences}
+
+
+%%% KOMA class
+\documentclass[
+     paper=a4
+    ,fontsize=13pt
+    ,DIV=12
+    ,titlepage=true
+    ,fleqn
+    ,open=right
+    ,english
+    ,pagesize
+    ,numbers=noenddot
+    ,chapterprefix=true
+    % ,draft
+]{scrbook}
+
+
+%%% Print or PDF version?
+\RequirePackage{etoolbox}
+\newtoggle{twoside}
+\newtoggle{print}
+
+% Use these to toggle between the different layouts and
+% whether it is a print version or an electronic version
+\settoggle{twoside}{false}
+\settoggle{print}{false}
+
+\iftoggle{twoside}{
+    \KOMAoption{twoside=semi}
+}{
+    % Use a centered type area for the oneside version. We use twoside=semi
+    % to preserve the page numbers between the different layouts.
+    \KOMAoption{twoside=semi}
+
+    % Patch the headers and footers to be centered
+    \usepackage[automark]{scrlayer-scrpage}
+    \clearpairofpagestyles
+    \chead{\leftmark}
+    \cfoot{\pagemark}
+}
+
+
+%%% Fonts, encoding
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[scale=.85]{roboto}
+\usepackage[scale=.91]{sourcecodepro}
+\usepackage[T1]{fontenc}
+
+
+%%% Math, symbols, units
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xspace}
+\usepackage{xfrac}
+\usepackage{bm}
+\usepackage{dsfont}    % for identity-matrix
+\IfFileExists{siunitx.sty}{
+    \usepackage{siunitx}
+}{
+    \message{Warning: siunitx package is missing.}
+}
+
+% Bold vectors
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+% This redefines a linebreak '\\' inside the 'align'-environment.
+% It adds \notag to all equations except the last (only one label
+% for multi-line equations).
+\makeatletter
+\def\Let@{\def\\{\notag\math@cr}}
+\makeatother
+
+
+%%% Graphics
+\usepackage{graphicx}
+\usepackage{scrhack}
+\usepackage[capbesideposition=left]{floatrow}
+\usepackage[
+     captionskip=6pt
+    ,position=top
+]{subfig}
+\usepackage[
+     font=small
+    ,labelfont=bf
+    ,format=plain
+]{caption}
+\captionsetup*[figure]{name=Fig.}
+\graphicspath{{fig/}}
+
+
+%%% Layout, typesetting, formatting
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[iso]{datetime}
+\linespread{1.1}\selectfont
+\raggedbottom
+\typearea[current]{calc}
+
+
+%%% Colors
+\usepackage{xcolor}
+\definecolor{tblue}{rgb}{0.,0.4,1}
+\definecolor{tmagenta}{rgb}{.92,0,0.55}
+
+
+%%% Hyperref
+\usepackage[
+     pdfusetitle
+    ,colorlinks=true
+    ,citecolor=tblue
+    ,linkcolor=tblue
+    ,urlcolor=tmagenta
+    ,pdfborder={0 0 0}
+    ,unicode=true
+]{hyperref}
+
+\iftoggle{print}{
+    % Hide the colored links in the print version
+    \hypersetup{hidelinks}
+}{}
+
+
+%%% Bibliography
+\usepackage{csquotes}
+\usepackage[
+     backend=biber
+    ,defernumbers=true
+    ,style=numeric-comp
+    ,doi=false
+    ,url=false
+    ,isbn=false
+    ,arxiv=abs
+    ,firstinits=true
+    ,hyperref=true
+    ,backref=true
+    ,maxnames=10
+    ,sorting=none
+]{biblatex}
+
+\addbibresource[label=my-publications]{bibliography/my-publications.bib}
+\addbibresource[label=all]{bibliography/all.bib}
+
+% do not show month and journal issue:
+\AtEveryBibitem{
+    \clearfield{month}
+    \clearfield{number}
+}
+
+% only show starting page 494 of a page range like 494-499.
+% also, suppress the 'p. ' prefix
+\DeclareFieldFormat{pages}{\mkfirstpage{#1}}
+
+% remove the prefix 'In: '
+\renewbibmacro{in:}{}
+
+% regular journal title, bold volume number
+\DeclareFieldFormat*{journaltitle}{#1}
+\DeclareFieldFormat*{volume}{\mkbibbold{#1}}
+
+% Hyperlink the title to DOI website
+\newbibmacro{string+doi}[1]{%
+      \iffieldundef{doi}{#1}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
+      \DeclareFieldFormat{title}{\usebibmacro{string+doi}{\mkbibemph{#1}}}
+      \DeclareFieldFormat[article]{title}{\usebibmacro{string+doi}{\mkbibquote{#1}}}
+
+
+%%% Metadata
+\AtBeginDocument{
+    \title{\thesisTitle}
+    \author{\thesisAuthor}
+    \date{}
+}
+
+
+%%% Chapter pages
+\colorlet{chaptergray}{gray!50}
+
+% Right-align chapter titles
+\let\raggedchapter\raggedleft
+
+% Big gray chapter number
+\addtokomafont{chapterprefix}{\color{chaptergray}\fontsize{3.5cm}{1em}\selectfont}
+\renewcommand*{\chapterformat}{\thechapter}
+
+% Vertical spacing
+\renewcommand{\chapterheadstartvskip}{\vspace{3cm}}
+\renewcommand{\chapterheadmidvskip}{\\\vspace{0.5cm}}
+\renewcommand{\chapterheadendvskip}{\vspace{1.5cm}}
+
+
+%%% Languages
+\usepackage[ngerman,main=english]{babel}
+
+
+%%% References
+\usepackage[noabbrev]{cleveref}
+
+
+%%% Appendix
+\usepackage[toc]{appendix}
+\Crefname{appendixchapter}{Appendix}{Appendices}
+\crefname{appendixchapter}{appendix}{appendices}
+
+
+%%% Best practices
+\ObsoleteCS[unnecessary]{eqref}{\protect\tref\space or \protect\cref}
+\ObsoleteCS[unnecessary]{subsubsection}{\protect\paragraph\space}
+\ObsoleteCS[unnecessary]{footnote}{paranthesis or include it in the main text}
+\ObsoleteEnv[probably not what you wanted]{align*}{align}
+
+
+%%% PDF
+% see http://tex.stackexchange.com/q/183149
+% and http://tex.stackexchange.com/a/198590
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname pdfsuppresswarningpagegroup\endcsname\relax
+\else
+    \pdfsuppresswarningpagegroup=1\relax
+\fi
+
+% set PDF version to 1.7
+\pdfoptionpdfminorversion=7
+
+
+\AtEndPreamble{
+    \input{include/latex-report/include/commands.tex}
+    \input{include/commands.tex}
+    \input{include/abbreviations.tex}
+}
