@@ -1,0 +1,182 @@
+\addchapter{Growth and Structural Characterization of Quantum Materials}
+
+
+\section{Growth of \nbse}
+
+\nbse was grown using Molecular beam epitaxy (MBE) on c-plane of sapphire substrate from Crystec. The substrate was 
+cleaned using modified RCA method as described in \tref{cleaning-al2o3} and loaded in the selenide chamber of \papaya\ 
+where it was degassed at \temperature{700} for about 1 hour. Nb and Se are co evaoparoated from e-beam and K-cells respectively
+such that ther flx ratio is 1:20. The first 3 monolayers (MLs) were grown at \temperature{570} and all the subsequent 
+layers were grown at \temperature{650}. The deposited sample was annealed at \temperature{700} for the first time after 
+deposition of 3 ML and then intermittently after every 10-15 MLs. The growth is monitored continuously using RHEED and the
+the stoichiometry and morphology is assessed intermittently using XPS and STM respectively. Once the sample is taken out 
+of the chamber its structure is assessed using XRD and Raman.
+
+
+\subsection{Cleaning \alumina substrate}
+\tlabel{cleaning-al2o3}
+
+The substrates which we recieve from the suppliers usually have both metallic and organic impurities on them. The AFM of
+the substrate as recieved from the supplier is shown in \tref{afm-rec-al2o3} The recipe for cleaning the substrate is as follows:
+
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.31}{afm/al2o3_as_recieved.png}
+        \tlabel{afm-rec-al2o3}
+    }
+    \subfloat[]{
+        \ig{0.31}{afm/al2o3_after_cleaning.png}
+        \tlabel{afm-clean-al2o3}
+    }
+    \subfloat[]{
+        \ig{0.31}{afm/al2o3_after_annealing.png}
+        \tlabel{afm-anneal-al2o3}
+    }
+    \caption{
+        AFM image of Al2O3 sunstrates 
+        \sfA~ as received form Crystec, 
+        \sfB~  after modified RCA cleaning of the substrate, and 
+        \sfC~  after annealing of the cleaned before loading in growth chamber. 
+        The chemical cleaning helps in removing all the impurities on the substrate.
+    }
+    \tlabel{fig:afm-al2o3}
+\end{figure}
+
+\begin{enumerate}
+    \item Soak the substrate in ethanol for 12 hours.
+    \item Clean the substrate in ultrasonic bath of acetone and Isopropanol for 5 minutes each to remove 
+    bulky dissolvable contaminants and particulates materials.
+    \item Rinse thoroughly in deionized (DI) water thoroughly and blow with dry nitrogen gas.
+    \item Heat the substrate in \ammonia\ : \peroxide\ :  \water\ = 1 : 1 : 5 to about \temperature{80} for 10 minutes \ammoniumion in the 
+    cleaning solution will complex with heavy metal on the substrate surface to form a soluble metal salts which is removed.
+    \item Rinse thoroughly in DI water thoroughly and dry with pure nitrogen gas.
+    \item Soak the substrate in solution of \hcl\ : \peroxide\ : \water\ = 1: 1: 3 at about \temperature{80} for 10 minutes \hydrogenion\ ion 
+    in the cleaning solution will replace with the light metal impurities to form soluble salt and be removed.
+    \item Rinse thoroughly in DI water thoroughly and dry with pure nitrogen gas.
+    \item Clean in \sulphuricacid\ : \phosphoricacid\ = 1 : 3 at about \temperature{80} for 10min to move the oxide layer on the sapphire substrate
+    \item Rinse thoroughly in DI water thoroughly and dry with pure nitrogen gas.
+    \item After drying the sapphire substrate anneal at \temperature{1200} for 4h preferably, but not necessarily, in the \oxygen\ atmosphere.
+\end{enumerate}
+
+
+
+We are able to get rid of the impurities after chemically cleaning it as can be seen in \tref{afm-clean-al2o3}.
+The terraces of the substrate are visible in \tref{fig:afm-al2o3} after annealing it in \oxygen\ atmosphere.
+The width of the terraces is dependent on the miscut angle of the substrate. Lower the miscut angle, 
+wider the terraces. The cleaned substrate was then loaded into the selenide chamber of PAPAYA where 
+it was first degassed at \temperature{700} for about 1 hour. The substrate surface is now ready for growth of \nbse. \\
+
+The growth of any thin film using MBE can be affected by two major factors:
+\begin{enumerate}
+    \item temperature of the substrate and
+    \item flux ratio of the elements of the film
+\end{enumerate}
+I will discuss their effect on growth of NbSe2 film one by one.
+
+\subsection{Temperature of the substrate}
+
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.25}{rheed/NbSe2_570_deg_c.png}
+        \tlabel{rheed-nbse-570}
+    }
+    \subfloat[]{
+        \ig{0.25}{rheed/NbSe2_650_deg_c.png}
+        \tlabel{rheed-NbSe2-650}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_570_cont_deg_c.png}
+        \tlabel{rheed-NbSe2-570-cont}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_570_650_deg_c.png}
+        \tlabel{rheed-NbSe2-570-650}
+    }
+    \caption{
+        RHEEDin \dirx\ direction of \nbse\
+        \sfA~ when growing interfacial layer at \temperature{570}, 
+        \sfB~  when growing interfacial layer at \temperature{650},  
+        \sfC~  when continuing growth at \temperature{570} for > 2 h, and
+        \sfD~ when growing interfacial layer at \temperature{570} and
+        continuing the gorwth at \temperature{650}.
+    }
+    \tlabel{rheed-NbSe2-optimization}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \ig{0.4}{rheed/NbSe2_growth_algorithm.png}
+    \tlabel{rheed-NbSe2-growth-algo}
+    \caption{
+        Algorithm for growth of \nbse\
+    } 
+\end{figure}
+
+
+99.999\% pure Nb was evaporated using an e-beam cell and Se was evaporated using 
+K-cell with a flux ratio >1:20. The interfacial layer of \nbse grrow best around 
+\tempError{570}{20}. When the temperature < \temperature{500}, we get polycrystal
+sample and when the temperature > \temperature{650} the island growth starts. But
+the subsequent layers do not grow well at the same temperature. In order to avoid,
+stranski-Krostanov growth all the subsequent layers must be grown at \tempError{650}{20}.
+The first ~3 monolayer (ML) is grown at \tempError{570}{20} and all the subsequent layers 
+are grown at \tempError{650}{20} \tref{rheed-NbSe2-growth-algo} and 
+\tref{rheed-NbSe2-optimization}. The deposited sample is annealed at \tempError{700}{20} 
+for the first time after deposition of 3 ML and then intermittently after every 10-15 ML.
+
+
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.31}{rheed/Al2O3_10-10.png}
+        \tlabel{rheed-al2o3-10-10}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_begin-10-10.png}
+        \tlabel{rheed-NbSe2-begin-10-10}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_10-10.png}
+        \tlabel{rheed-NbSe2-10-10}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{rheed/Al2O3_11-20.png}
+        \tlabel{rheed-al2o3-11-20}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_begin_11-20.png}
+        \tlabel{rheed-NbSe2-begin-11-20}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbSe2_11-20.png}
+        \tlabel{rheed-NbSe2-11-20}
+    }
+    \caption{
+        The evolution of RHEED image of \dirx\ direction of 
+        \sfA~ substrate:  \alumina, 
+        \sfB~  interfacial layer of \nbse\ and,  
+        \sfC~  \nbse\ after 6h growth. After rotating the sample by 30°,
+         we observe \diry\ direction of 
+        \sfD~ substrate ,
+        \sfE~ interfacial \nbse ,
+        \sfF~ \nbse\ after 6h growth.
+    }
+    \tlabel{rheed-NbSe2}
+\end{figure}
+Long streaky RHEED patterns of the (0001) Al2O3 in \dirx\ and \diry\ directions were observed 
+indicating a flat and crystalline substrate surface  (\tref{rheed-al2o3-10-10} and 
+\tref{rheed-al2o3-11-20}).  As the growth of forst monolayer completes the RHEED appears a 
+bit diffused(\tref{rheed-NbSe2-begin-10-10} and \tref{rheed-NbSe2-begin-11-20}) but as 
+the growth progresses the patter becomse streakier (\tref{rheed-NbSe2-10-10} and 
+\tref{rheed-NbSe2-11-20}).It means that the grain size increases as the film grows thicker  
+because of increased coalescence. The in-plane lattice parameter for this film 
+is estimated to be \aerr{3.46}{0.03} using RHEED.
+
+We characterized the sample using X-Ray diffraction (XRD) and Raman Spectroscopy after taking it out of the growth chamber.
+
+\section{Growth of Weyl Semimetals}

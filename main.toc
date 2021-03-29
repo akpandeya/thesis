@@ -1,0 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{\nonumberline Zusammenfassung}{3}{chapter*.1}%
+\contentsline {chapter}{\nonumberline Abstract}{5}{chapter*.2}%
+\contentsline {chapter}{\nonumberline Acknowledgements}{7}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Moore’s Law – Room at the bottom is shrinking}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Spintronics for scaling and beyond}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Quantum materials for spintronics}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Dichalcogenides}{12}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Weyl semi-metals}{12}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Outline}{12}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Spintronics and Quantum Materials}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Spin current - Two current model}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}How to create spin current?}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.3}How to measure spin current?}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Landu-Lifshitz-Gilbert Equation}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Spin-Torque Ferrmomagnetic Resonance - STFMR}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Second Harmonic Hall}{16}{section.2.6}%
+\contentsline {section}{\numberline {2.7}final}{19}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Experimental Set Up}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}PAPAYA - Multi-purpose chamber for production and analysis of nano-systems}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}TAMARIND - Topological materials engineering by epitaxial design}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}STFMR Set-Up}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Second Harmonic Hall Set Up}{23}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Growth and Structural Characterization of Quantum Materials}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Growth of \ensuremath {\text {NbSe}_{\text {2}}}}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Cleaning \ensuremath {\text {Al}_{\text {2}}\text {O}_{\text {3}}}substrate}{25}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Temperature of the substrate}{27}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Growth of Weyl Semimetals}{27}{section.4.2}%

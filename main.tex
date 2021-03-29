@@ -1,29 +1,36 @@
-\input{latex-report/include/header}
-
-%%% include custom packages here
-% \usepackage{..}
-
-%%% meta data and settings
-\newcommand{\lrTitle}{Report Title}
-\newcommand{\lrAuthor}{Report Author}
-\newcommand{\lrDate}{\today}
-
-% \toggletrue{lrHideToc}
-% \toggletrue{lrHideTitle}
-% \toggletrue{lrSmallHeadings}
-% \toggletrue{lrHeaderDate}
-
+\input{include/header.tex}
+\input{include/metadata.tex}
 
 \begin{document}
 
-\section{First section}
-Some text and an important definition
-\begin{align}
-    f(x) = 42 + \integralb{0}{x}{s} g(s)
-\end{align}
-where $g(s)=a \bb{1 + \ef{i s}}$.
+\input{frontmatter/titlepage}
 
-\subsection{First subsection}
-And some more text.
+\input{frontmatter/zusammenfassung}
+
+\input{frontmatter/abstract}
+
+\input{endmatter/acknowledgements}
+
+
+
+\cleardoublepage
+
+\input{frontmatter/publications}
+
+
+\microtypesetup{protrusion=false}
+\tableofcontents
+\microtypesetup{protrusion=true}
+
+\input{frontmatter/quote}
+
+\includechapter{in}{introduction}
+\includechapter{sq}{spintronic_and_quantum_materials}
+\includechapter{es}{experimental_set_up}
+\includechapter{gr}{growth_of_quantum_materials}
+
+
+
+\input{endmatter/bibliography}
 
 \end{document}

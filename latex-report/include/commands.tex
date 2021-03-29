@@ -3,7 +3,6 @@
 \newcommand{\bc}[1]{\left[#1\right]}                                        %% brackets
 \newcommand{\absv}[1]{\left|#1\right|}                                      %% absolute value
 \newcommand{\absvsq}[1]{\absv{#1}^2}                                        %% absolute value squared
-\newcommand{\comm}[2]{\left[#1, #2\right]}                                  %% commutator
 \newcommand{\meanv}[1]{\left\langle #1\right\rangle}                        %% mean value
 
 %%% Fixed-size math (for quickly changing from adaptive style)
@@ -21,10 +20,6 @@
 \newcommand{\MEANV}[1]{\Big\langle #1\Big\rangle}                           %% Big mean value
 
 %%% Braket notation
-\newcommand{\bra}[1]{\ensuremath{\left\langle #1\right|}\xspace}             %% bra
-\newcommand{\ket}[1]{\ensuremath{\left|#1\right\rangle}\xspace}              %% ket
-\newcommand{\braket}[2]{\left\langle #1\middle|#2\right\rangle}              %% scalar product
-\newcommand{\ketbra}[2]{\left|#1\middle\rangle\middle\langle #2\right|}      %% ket-bra operator
 \newcommand{\braketop}[3]{\left\langle #1\middle|#2\middle|#3\right\rangle}  %% matrix element
 \newcommand{\smallbraketop}[3]{\langle #1|#2|#3\rangle}                      %% small matrix element
 
@@ -125,10 +120,6 @@
 \newcommand{\Dy}{\Delta y}
 \newcommand{\Dt}{\Delta t}
 
-%%% Trigonometry
-\newcommand{\asin}{\operatorname{asin}}
-\newcommand{\acos}{\operatorname{acos}}
-\newcommand{\atan}{\operatorname{atan}}
 
 %%% Figures
 \newcommand{\igopt}[2]{\includegraphics[#1]{#2}} %%! options, filename
@@ -140,7 +131,7 @@
         \centering
         \ig{#1}{#2}
         \caption{#3}
-        \label{fig:#2}
+        % \label{fig:#2}
     \end{figure}
 }
 

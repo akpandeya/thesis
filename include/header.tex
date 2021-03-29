@@ -39,10 +39,10 @@
 
 \iftoggle{twoside}{
     \KOMAoption{twoside=semi}
-}{
+
     % Use a centered type area for the oneside version. We use twoside=semi
     % to preserve the page numbers between the different layouts.
-    \KOMAoption{twoside=semi}
+    % \KOMAoption{twoside=semi}
 
     % Patch the headers and footers to be centered
     \usepackage[automark]{scrlayer-scrpage}
@@ -72,6 +72,8 @@
 }{
     \message{Warning: siunitx package is missing.}
 }
+\usepackage{physics}
+% \usepackage{romannum}
 
 % Bold vectors
 \renewcommand{\vec}[1]{\mathbf{#1}}
@@ -111,7 +113,7 @@
 \raggedbottom
 \typearea[current]{calc}
 
-
+\usepackage{gensymb}
 %%% Colors
 \usepackage{xcolor}
 \definecolor{tblue}{rgb}{0.,0.4,1}
@@ -238,7 +240,7 @@
 
 
 \AtEndPreamble{
-    \input{include/latex-report/include/commands.tex}
+    \input{latex-report/include/commands.tex}
     \input{include/commands.tex}
     \input{include/abbreviations.tex}
 }

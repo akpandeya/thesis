@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tools/findtex --nonumbers -o -H '\\t?label{[^}]+}'

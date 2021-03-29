@@ -1,0 +1,321 @@
+\addchapter{Spintronics and Quantum Materials}
+\label{spintronics-and-quantum-materials}
+
+\section{Spin current - Two current model}
+At a very basic level, spin current if net transfer of spins from one point to another. 
+Spin Current is actually defined as a tensor $q_ij$, where $i$ denotes the direction of 
+flow of spin current and j denotes the which component of spin is flowing[7]. The indices 
+$i$ and $j$ are the directions in the 3D space. We can, in principle, have an net spin current
+without any flow of charge current, if equal amount of up and down electron are moving in 
+opposite direction. That is why these are often touted as dissipationless[8]. But in reality, 
+one always needs some amount of charge current to create the spin current in the first place 
+which should be taken into consideration for making a fair comparison.
+
+There can be a net spin current if there is an imbalance between the up spin and down spin 
+flowing in the opposite direction to each other. Let us define electrical spin polarization 
+$P_j$ in the direction j as follows:
+\begin{equation}
+    \centering
+    \tlabel{spin-pol-def}
+    P_j=\frac{n^{\uparrow}-n^{\downarrow}}{n^{\uparrow}+n^{\downarrow}}
+\end{equation}
+
+\tref{spin-pol-def}
+
+
+\section{How to create spin current?}
+
+We can create spin current using many methods. One of the most simple methods is to take 
+a ferromagnet and pass current through it and inject the current coming out of the 
+ferromagnet into wherever we might need[9]. But this is a fairly inefficient method. 
+There are other methods like spin pumping, spin Hall effect and inverse spin galvanic 
+effect (Rashba-Edelstein effect) etc. Let us discuss these methods in detail.
+
+\section{How to measure spin current?}
+
+
+\section{Landu-Lifshitz-Gilbert Equation}
+The magnetization of a sample experiences a torque perpendicular to the direction of 
+applied field and the direction of magnetization. In absence of any damping the magnetization 
+can keep precessing around the applied field forever. But in real materials the radius of 
+precession keeps decreasing and eventually all the magnetizations point towards the applied 
+magnetic field.  
+
+\begin{equation}
+    \tlabel{llg}
+    \mdot = -\gamma(\mbold \times \hbold)+ \frac{\alpha}{M} \left(\mbold \times \mdot)\right)
+\end{equation}
+
+\section{Spin-Torque Ferrmomagnetic Resonance - STFMR}
+When a dc magnetic field $H_{ext}$ is sweeped in the STFMR configuration, the mixing 
+voltage [10], can be expressed as in \tref{llg}:
+
+\begin{equation}
+    \tlabel{vmix}
+    V_{mix} = V_{0} + V_{sym} \lorsym + V_{as} \lorasym
+\end{equation}
+
+We fit this equation to extract fitting parameters \vo, \hres, \vsym, \vas, \hres, and $\Delta$. 
+When there is no DC current passing through the metal layer, the resonance field can be used to 
+fit effective magnetization using Kittel formula [11] using \tref{vmix}.
+
+\begin{equation}
+    \tlabel{kittel}
+    f_{res} = \frac{\gamma}{4\pi} \sqrt{(H_{res} + H_{0})(H_{res} + H_{0} + M_{eff})}
+\end{equation}
+
+The Gilbert damping can be extracted from the linewidth of the resonance peak [11] using equation \tref{gilbert}.
+
+\begin{equation}
+    \tlabel{gilbert}
+    \Delta H = \Delta H_{res} + \frac{2\pi f}{\lambda}\alpha
+\end{equation}
+
+When a dc current is passed through the normal metal it pumps spin current into the ferromagnetic 
+layer. In presence of a spin current the equation (4) is modified as [12], [13]:
+
+\begin{equation}
+    \Delta H = \Delta H_{res} + \frac{2\pi f}{\lambda} \left( 
+        \alpha + \frac{\sin{\phi}}{(H_{ext} + 0.5M_{eff}) \mu_{0} M_{s} t}  
+        \frac{\hbar}{2e}J_{s}
+    \right)
+\end{equation}
+
+The change in linewidth ($\delta \Delta H$) for two different values of spin current 
+($\Delta J_{s} = J_{s1} - J_{s2}$) will be:
+
+\begin{equation}
+    \tlabel{deltaDeltaH}
+    \delta \Delta H = \frac{2\pi f}{\lambda} \left( 
+        \alpha + \frac{\sin{\phi}}{(H_{ext} + 0.5M_{eff}) \mu_{0} M_{s} t} 
+        \frac{\hbar}{2e}J_{s}
+        \right)
+\end{equation}
+
+The \tref{deltaDeltaH} can be rearranged to get an expression of $\Delta J_{s}$:
+
+\begin{equation}
+    \tlabel{jseq}
+    \Delta J_{s} = \frac{\delta \Delta H}{
+        \frac{2\pi f}{\lambda} \left( 
+        \alpha + \frac{\sin{\phi}}{(H_{ext} + 0.5M_{eff}) \mu_{0} M_{s} t} 
+        \frac{\hbar}{2e}J_{s}
+        \right)
+    }
+\end{equation}
+
+We can assume a simple model of parallel connection between the ferromagnetic layer and 
+the normal metal layer to find out the current distribution within the bilayer.
+
+\begin{figure}
+   
+    \centering
+    
+    \ig{0.3}{parallel_fm_nm.png}
+    \tlabel{parallel_fm_nm}
+
+    \caption{Parallel connection between the ferromagnetic and normal metal layer}
+    
+\end{figure}
+
+The current density through the metal layer is calculated as follows:
+\begin{equation}
+        J_{NM} = \frac{I_{NM}}{A_{c}} = \frac{V_{DC}/R_{NM}}{A_{C}} 
+        = I_{DC} \frac{R_{FM} R_{NM}}{R_{FM} + R_{NM}} \frac{1}{R_{NM} A_{C}}
+\end{equation}
+
+\begin{equation}
+    \implies J_{NM} = I_{DC} \frac{R_{FM}}{(R_{FM} + R_{NM})A_C}
+\end{equation}
+
+\begin{equation}
+    \tlabel{jnmeq}
+    \implies \Delta J_{NM} = \Delta I_{DC} \frac{R_{FM}}{(R_{FM} + R_{NM})A_C}
+\end{equation}
+
+
+Using \tref{jseq} and \tref{jnmeq} , we have
+
+\begin{equation}
+    \theta = \frac{\Delta J_{NM}}{\Delta J_{S}}
+\end{equation}
+
+\begin{equation}
+    \tlabel{stfmr-spinhall}
+    \implies \theta = \frac{\delta \Delta I_{H}/\delta \Delta I_{DC}}{
+        \frac{2\pi f}{\lambda} \left( 
+        \alpha + \frac{\sin{\phi}}{(H_{ext} + 0.5M_{eff}) \mu_{0} M_{s} t} 
+        \frac{\hbar}{2e}J_{s}
+        \right)
+    } \frac{R_{FM}}{(R_{FM} + R_{NM})}A_C
+\end{equation}
+
+This is the final relation which we use to calculate the Spin-Hall ratio in our experiments.
+
+\section{Second Harmonic Hall}
+
+Let us take a hall bar of NM-FM heterostructure and pass ac current ($I_{0} \sinwt $) 
+through it in presence of an in-plane magnetic field ($B_0$) and measure transversal voltage 
+($V_{xy}(t)$) across it. The effective magnetic field acting on the sample will have both ac
+ and dc components:
+
+\begin{equation}
+    \vb{B} = \vb{B_{DC}} + \vb{B_{ac}(t)}
+\end{equation}
+
+where,
+
+\begin{equation}
+    \vb{B_{DC}} = \vb{B_0} + \vb{B_{ani}}
+\end{equation}
+
+\begin{equation}
+    \vb{B_{ac(t)}} = \vb{B_{AD}} + \vb{B_{FL}} + \vb{B_{Oe}} = \vb{b} \sinwt
+\end{equation}
+
+\begin{equation}
+    V_{xy}(t) = R_{xy}(t) \times I_{0} \sinwt
+\end{equation}
+
+\begin{equation}
+    R_{xy}(t) = R_{xy} \left( \vb{B_{DC}} \right) + \partialD{R_{xy}}{\vb{B_{ac}}} \vb{b} \sinwt
+\end{equation}
+
+\begin{equation}
+    V_{xy}(t) = \left( 
+        R_{xy} \left( \vb{B_{DC}} \right) +
+        \partialD{R_{xy}}{\vb{B_{ac}}} \vb{b} \sinwt
+    \right) I_{0} \sinwt
+\end{equation}
+
+\begin{equation}
+    V_{xy}(t) = R_{xy} \left( \vb{B_{DC}} \right) I_{0} \sinwt + 
+    \partialD{R_{xy}}{\vb{B_{ac}}} I_{0} \vb{b} \sinswt
+\end{equation}
+
+\begin{equation}
+    V_{xy}(t) = R_{xy} \left( \vb{B_{DC}} \right) I_{0} \sinwt + 
+    \partialD{R_{xy}}{\vb{B_{ac}}} I_{0} \vb{b} \left( \frac{1 - \costwt}{2} \right)
+\end{equation}
+
+\begin{equation}
+    \tlabel{vxywithtrig}
+    V_{xy}(t) = R_{xy} \left( \vb{B_{DC}} \right) I_{0} \sinwt + 
+    \frac{1}{2} \partialD{R_{xy}}{\vb{B_{ac}}} I_{0} \vb{b}  - 
+    \frac{1}{2} \partialD{R_{xy}}{\vb{B_{ac}}} I_{0} \vb{b} \costwt
+\end{equation}
+
+\begin{equation}
+    \tlabel{vxywithr}
+    V_{xy}(t) = R^{0}_{xy} I_{0} + R^{\omega}_{xy} I_{0} + R^{2 \omega}_{xy} I_{0}
+\end{equation}
+
+Comparing \tref{vxywithtrig} and \tref{vxywithr}, we get:
+
+\begin{equation}
+    R^{0}_{xy} = \frac{1}{2} \partialD{R_{xy}}{\vb{B_{ac}}} \vb{b} 
+\end{equation}
+
+\begin{equation}
+    R^{\omega}_{xy} = R_{xy} \left( \vb{B_{DC}} \right)  \sinwt 
+\end{equation}
+
+\begin{equation}
+    R^{2 \omega}_{xy}  = - \frac{1}{2} \partialD{R_{xy}}{\vb{B_{ac}}} \vb{b} \costwt
+\end{equation}
+
+This means that the first harmonic amplitude is exactly like the Dc measurement which 
+will have AHE and PHE effect contributions[14]:
+
+The second harmonic signal has three major source contributions:
+
+\begin{enumerate}
+    \item Contribution due to Oerested Field
+    \item Contribution due to torque on  the magnetization of FM due to the spin current 
+    from the NM
+    \item ontribution due to the thermal gradient along the substrate to the top layer of
+     the film
+\end{enumerate}
+
+The second harmonic expression for transverse resistance can be written as:
+
+\begin{eqnarray} \nonumber
+    % \begin{split}
+        R^{2 \omega}_{xy}  &=& \left( R_{AHE} - 2 R_{PHE} \cos{\theta} \sin{2 \phi} \right)
+        \partialD{\cos{\theta}}{\theta_{B}} \frac{B^{\theta}_{ac}}{B_{0} \cos ({\theta_{B} - \theta})} \\
+        && \nonumber + R_{PHE} \sin ^{2} {\theta} \partialD{\sin {2\phi}}{\phi_{B}} 
+        \frac{B^{\phi}_{ac}}{\sin {\theta_{B}}  \sin ({\theta_{B} - \theta}) B_{0}} \\
+        && + \alpha \nabla {T} I_{0} \sin{\theta}\cos{\phi}
+    % \end{split}
+\end{eqnarray}
+
+When the field is applied in-plane of the sample $\theta_{B}=\pi/2$ and for permalloy with PMA, 
+$\theta \approx \pi/2$, and $\phi_{B} \approx \phi$  above equation can be simplified to:
+
+
+\begin{equation}
+    \tlabel{r2wxy-v1}
+    R^{2 \omega}_{xy}  = R_{AHE} \partialD{\cos{\theta}}
+    {\theta_B} \frac{B^{\theta}_{ac}}{B_{0}} + R_{PHE} 
+    \partialD{\sin{2\phi}}{\phi_B} \frac{B^{\theta}_{ac}}{B_{0}}  + 
+    \alpha \nabla {T} I_{0} \sin{\theta} \cos{\phi}
+\end{equation}
+
+Calculating the derivatives at the above mentioned angles, we get,
+
+\begin{equation}
+    \tlabel{rahe}
+    R_{AHE} \partialD{\cos{\theta}} {\theta_B} = R_{AHE} \sin{\theta} \partial{\theta}{\theta_{B}} = R_{AHE} \\
+    \end{equation}
+
+\begin{equation}
+    \tlabel{rphe}
+    R_{PHE} \partialD{\sin{2\phi}}{\phi_B} = R_{PHE} 2 \cos{2 \phi} =
+    R_{PHE} \left( \cos^{2}{\phi} - 1 \right) 
+\end{equation}
+
+Substituting these values from \tref{rahe} and \tref{rphe} into \tref{r2wxy-v1} 
+we get,
+
+\begin{equation}
+    \tlabel{r2wxy-v2}
+    R^{2 \omega}_{xy}  = R_{AHE} \frac{B^{\theta}_{ac}}{B_{0}} 
+    + R_{PHE} \left( \cos^{2}{\phi} - 1 \right) \frac{B^{\phi}_{ac}}{B_{0}}
+    + \alpha \nabla {T} I_{0} \sin{\theta} \cos{\phi}
+\end{equation}
+
+The antidumping and field like torques are given by:
+
+\begin{equation}
+    \tlabel{bad}
+    \vb{B_{AD}} = B_{AD} \left( \vb{m \times y} \right)
+    = B_{AD} \cos{\phi}\ \hat{\theta}
+\end{equation}
+
+\begin{equation}
+    \tlabel{bfloe}
+    \vb{B_{FL+Oe}} = \left( B_{FL} + B_{Oe} \right) \left( \vb{m \times m \times y} \right)
+    = \left( B_{FL} + B_{Oe} \right) \cos {\phi}\ \hat{\phi}
+\end{equation}
+Substituting these values from \tref{bad} and \tref{bfloe} in the expression 
+for second harmonic resistance in \tref{r2wxy-v2} we get,
+\begin{equation}
+    \tlabel{r2wxy-v3}
+    R^{2 \omega}_{xy}  = R_{AHE} \frac{B_{AD} \cos{\phi}\ }{B_{0}} 
+    + R_{PHE} \left( \cos^{2}{\phi} - 1 \right) \frac{ \left( B_{FL} + B_{Oe} \right) }{B_{0}}
+    + \alpha \nabla {T} I_{0} \sin{\theta} \cos{\phi}
+\end{equation}
+
+\begin{equation}
+    \tlabel{r2wxy-v4}
+    R^{2 \omega}_{xy}  = \left[ \left( R_{AHE} \frac{B_{AD}}{B_{0}} + 
+    \alpha \nabla {T} I_{0} \right) \cos{\phi} \\
+    + 2 R_{PHE} \left( \cos^{3}{\phi} - \cos{\phi} \right) 
+    \frac{ \left( B_{FL} + B_{Oe} \right) }{B_{0}}  \right]    
+\end{equation}
+The simulation of the above equation gives following result.
+
+The raw data is symmetrized before fitting to get rid of unwanted contrinutions 
+due to misalignement of Hall branches, or misalignment of sample with respect 
+to external fields. The odd part of the second harmonic signal and the even
+part of the first harmonic signal is take before fitting the data.

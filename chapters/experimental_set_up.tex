@@ -1,0 +1,103 @@
+\addchapter{Experimental Set Up}
+
+\section{PAPAYA}
+\label{papaya}
+
+
+PAPAYA is growth-cum-analysis chamber which allows users to grow samples using
+MBE and characterize them using various in-situ techniques. It has 3 MBE 
+chambers, an XPS chamber and a low temperature STM-cum-Q plus AFM. The system 
+have following features:
+
+\begin{enumerate}
+    \item Selenide MBE : We can grow various Metal Selenide in this chamber. 
+    It's one port has Se and has 4 ports for other metals like Nb, Pd, V etc. 
+    The substrate can rotate up to \temperature{320} and heated up to 
+    \temperature{900} The chamber has RHEED for characterizing the thin 
+    film while growing it.
+
+    \item Telluride MBE: Various Tellurides can be grown in this chamber. 
+    It has only 3 ports and has mateials like SnTe in it. It has not been 
+    used in this work and hence, will not be described in detail here.
+
+    \item Metal MBE: Despite its name we can grow both metals and non-metals 
+    in it. It has 5 ports and Al, MgO, Py (Ni80Fe20), Ni and Cu  can be grown 
+    in this chamber. The sample can rotated for \temperature{360} but can 
+    be heated and hence, everything is grown at room temperature.
+
+    \item In-Situ X-ray photoelectron spectra (XPS) system: XPS is a surface 
+    sensitive techinique which can be used to characterize the elemental 
+    composition of a material and chemical states of these elements. It is 
+    a standard characterization tool based of photoelectric effect. When 
+    X-Ray with energy ($\photonEnergy$) with falls on a material with electron 
+    withbinding energy ($\bindingEnergy$) and surface work function ($\phi$), 
+    electrons with energy ($\kineticEnergy$) are emitted.
+    \begin{equation}
+        \tlabel{binding}
+        \bindingEnergy = \photonEnergy - \left( \kineticEnergy + \phi \right) 
+    \end{equation}
+
+    The kinetic energy of the emitted electrons is measured using a 
+    hemispherical analyser and using the \tref{binding} we can estimate the 
+    binding energy of the electrons. The XPS spectrum is number of detected 
+    electrons as a function of binding (or kinetic energy). A peak is observed 
+    corresponding to the binding energies of the electrons present in an 
+    element. Every element has electrons at fixed binding energies and thus, 
+    a set of peaks can serve as a fingerprint of the element. The position of 
+    the peaks may increase or decrease by a little bit based on its chemical 
+    state. The relative concentration of various elements can be estimated by 
+    taking the ratio of area under the curve of these peaks after taking 
+    relative sensitivity factor into account and subtracting background 
+    properly.
+
+    \begin{equation}
+        \tlabel{cps-conc}
+        \frac{C_1}{C_2} = \frac{A_1 \times r_2}{A_2 \times r_1}
+    \end{equation}
+    An omicron machine with Al and Mg sources is attached to PAPAYA. 
+    The measurements can be done only at room temperature in this system.
+    
+    \item In-Situ Scanning Tunneling Microscope (STM): The STM experiments 
+    were performed on an Omicron VT-STM-XT system operated at room temperature 
+    with a base pressure of \pressure{2}{-11}. The mechanically sharpened 
+    Pt/Ir tips were treated and checked on Au(111) surface before measurements, 
+    and the topography images were acquired at room-temperature.
+\end{enumerate}
+
+\begin{figure}
+    \ig{0.5}{papaya.png}
+    \tlabel{papaya}
+    \caption{
+        PAPAYA System
+    }
+\end{figure}
+
+
+\section{TAMARIND - Topological materials engineering by epitaxial design}
+It can be used to phosphides and arsenides. It has 7 ports in which Nb, Ta, 
+Py, MgO, GaP (as source of P) and GaAs (as source of As) is attached. 
+The substrate can be rotated up to 320 \degree\ and heated up to \temperature{1200} using 
+resistive heating. To achieve higher substrate temperature there is a 
+possibility to use e-beam heating. The substrate can be cooled using liquid 
+N2 to up to \temperature{-30}. There is a RHEED to monitor the growth of the film. There is a 
+residual gas analyser and a mass spectrometer to monitor the partial pressure of various 
+gaseous species in the chamber. 
+
+\begin{figure}
+    \ig{0.5}{tamarind.png}
+    \tlabel{tamarind}
+    \caption{
+        TAMRAIND System
+    }
+\end{figure}
+\section{STFMR Set-Up}
+
+\begin{figure}
+    \ig{0.5}{stfmr-schematic.png}
+    \tlabel{stfmr}
+    \caption{
+        STFMR Schematic
+    }
+\end{figure}
+
+\section{Second Harmonic Hall Set Up}
