@@ -1,23 +1,24 @@
-\addchapter{Growth and Structural Characterization of Quantum Materials}
+\addchapter{Growth and Characterization of \nbse}
+\label{growth_of_nbse2}
+
+\nbse samples in this study were  grown using Molecular beam epitaxy (MBE) on c-plane 
+of sapphire substrate from Crystec. The substrate was cleaned using modified RCA method 
+as described in \tref{cleaning-al2o3} and loaded in the selenide chamber of \papaya\ 
+where it was degassed at \temperature{700} for about 1 hour. Nb and Se are co evaoparoated 
+from e-beam and K-cells respectively such that ther flx ratio is 1:20. The first 3 monolayers 
+(ML) were grown at \temperature{570} and all the subsequent layers were grown at \temperature{650}. 
+The deposited sample was annealed at \temperature{700} for the first time after deposition of 3 ML 
+and then intermittently after every 10-15 MLs. The growth is monitored continuously using RHEED and 
+the stoichiometry and morphology is assessed intermittently using XPS and STM respectively. Once the 
+sample is taken out of the chamber its structure is assessed using XRD and Raman.
 
 
-\section{Growth of \nbse}
-
-\nbse was grown using Molecular beam epitaxy (MBE) on c-plane of sapphire substrate from Crystec. The substrate was 
-cleaned using modified RCA method as described in \tref{cleaning-al2o3} and loaded in the selenide chamber of \papaya\ 
-where it was degassed at \temperature{700} for about 1 hour. Nb and Se are co evaoparoated from e-beam and K-cells respectively
-such that ther flx ratio is 1:20. The first 3 monolayers (MLs) were grown at \temperature{570} and all the subsequent 
-layers were grown at \temperature{650}. The deposited sample was annealed at \temperature{700} for the first time after 
-deposition of 3 ML and then intermittently after every 10-15 MLs. The growth is monitored continuously using RHEED and the
-the stoichiometry and morphology is assessed intermittently using XPS and STM respectively. Once the sample is taken out 
-of the chamber its structure is assessed using XRD and Raman.
-
-
-\subsection{Cleaning \alumina substrate}
+\section{Cleaning \alumina substrate}
 \tlabel{cleaning-al2o3}
 
-The substrates which we recieve from the suppliers usually have both metallic and organic impurities on them. The AFM of
-the substrate as recieved from the supplier is shown in \tref{afm-rec-al2o3} The recipe for cleaning the substrate is as follows:
+The substrates which we recieve from the suppliers usually have both metallic and organic impurities on them.
+The AFM of the substrate as recieved from the supplier is shown in \tref{afm-rec-al2o3} The recipe for cleaning 
+the substrate is as follows:
 
 \begin{figure}
    
@@ -68,15 +69,7 @@ The width of the terraces is dependent on the miscut angle of the substrate. Low
 wider the terraces. The cleaned substrate was then loaded into the selenide chamber of PAPAYA where 
 it was first degassed at \temperature{700} for about 1 hour. The substrate surface is now ready for growth of \nbse. \\
 
-The growth of any thin film using MBE can be affected by two major factors:
-\begin{enumerate}
-    \item temperature of the substrate and
-    \item flux ratio of the elements of the film
-\end{enumerate}
-I will discuss their effect on growth of NbSe2 film one by one.
-
-\subsection{Temperature of the substrate}
-
+\section{Crystallinity of \nbse}
 
 \begin{figure}
     \centering
@@ -116,6 +109,12 @@ I will discuss their effect on growth of NbSe2 film one by one.
     } 
 \end{figure}
 
+The growth of any thin film using MBE can be affected by two major factors:
+\begin{enumerate}
+    \item temperature of the substrate and
+    \item flux ratio of the elements of the film
+\end{enumerate}
+I will discuss their effect on growth of NbSe2 film one by one.
 
 99.999\% pure Nb was evaporated using an e-beam cell and Se was evaporated using 
 K-cell with a flux ratio >1:20. The interfacial layer of \nbse grrow best around 
@@ -127,7 +126,6 @@ The first ~3 monolayer (ML) is grown at \tempError{570}{20} and all the subseque
 are grown at \tempError{650}{20} \tref{rheed-NbSe2-growth-algo} and 
 \tref{rheed-NbSe2-optimization}. The deposited sample is annealed at \tempError{700}{20} 
 for the first time after deposition of 3 ML and then intermittently after every 10-15 ML.
-
 
 \begin{figure}
    
@@ -177,6 +175,102 @@ the growth progresses the patter becomse streakier (\tref{rheed-NbSe2-10-10} and
 because of increased coalescence. The in-plane lattice parameter for this film 
 is estimated to be \aerr{3.46}{0.03} using RHEED.
 
-We characterized the sample using X-Ray diffraction (XRD) and Raman Spectroscopy after taking it out of the growth chamber.
+As mentioned above the flux of the Nb is many times higher than that of Se; it means that
+the rate of growth is determined entirely the Nb flux. If we increase the flux of Nb to more
+than 40 nA, the growth enters into island growth mode very quickly. This is because that 
+the molecuar species do not have enough time to diffuse on the surface of the sample. This
+flux corresponds to growth rate of 10 MLs/hour. This means that achieving thicker samples
+is a bit challenging.
 
-\section{Growth of Weyl Semimetals}
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.31}{xrd/nbse2-xrd.png}
+        \tlabel{xrd-nbse2-full}
+    }
+    \subfloat[]{
+        \ig{0.31}{xrd/nbse2-xrd-peak.png}
+        \tlabel{xrd-nbse-peak}
+    }
+    \caption{
+        X-Ray Difrraction of \nbse
+        \sfA~ full range, 
+        \sfB~  (002) peak.  
+    }
+    \tlabel{xrd-NbSe2}
+\end{figure}
+
+Once the sample is taken out from the chamber, its crystallinity is assesed using XRD.
+We find no spurious peaks between 20 \degree\ and 90 \degree\ range. The standard $\theta-2\theta$ X-Ray 
+diffraction (XRD) scan shows that the NbSe2 film is oriented along (0001) plane with out-of-plane 
+lattice parameter as \aerr{12.77}{0.16} (see \tref{xrd-NbSe2}).
+
+\begin{figure}
+    \centering
+    \ig{0.4}{tem/NbSe2-tem.png}
+    \tlabel{tem-NbSe2}
+    \caption{
+        TEM micrograph of \nbse\
+    } 
+\end{figure}
+
+High resolution transmission electron Microscopy image (shown in \tref{tem-NbSe2}) shows that 
+there is some disorder in the interfacial layer but the the sample grows thicker the 
+the order in the film increases. The planes of the \nbse throughout the film thickness indicating 
+high crystalline order, whereas the ones at the interface with the substrate are a bit corrugated. 
+
+\section{Morphology and stoichiometry of \nbse}
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.31}{stm/NbSe2_4ML.png}
+        \tlabel{stm-Nbse2-4ML}
+    }
+    \subfloat[]{
+        \ig{0.31}{stm/NbSe2_8ML.png}
+        \tlabel{stm-Nbse2-8ML}
+    }
+    \subfloat[]{
+        \ig{0.31}{stm/NbSe2_15ML.png}
+        \tlabel{stm-Nbse2-15ML}
+    }\\
+    \subfloat[]{
+        \ig{0.4}{stm/Nbse_3d_stm.png}
+        \tlabel{stm-Nbse2-3D}
+    }
+    \subfloat[]{
+        \ig{0.4}{stm/NbSe2_step_height.png}
+        \tlabel{stm-nbse2-step-height}
+    }
+    \caption{
+        STM image of \nbse
+        \sfA~ 4 ML, 
+        \sfB~  8 ML,  
+        \sfC~  15 ML.
+        \sfD~ 3D STM image of \nbse.
+        \sfE~ Step height of \nbse
+    }
+    \tlabel{stm-NbSe2}
+\end{figure}
+
+The STM image shows that the grain size of the film increases with increasing thickness of the film. 
+As the film thickness increases from 4 ML to 8 ML to 15 ML, the grain size keeps increaing as seen in 
+\tref{stm-NbSe2}. It shows that as the growth progresses the smaller domains coalesce to form larger ones.
+The atomic resolution in the inset of \tref{stm-NbSe2-15ML} shows that there are some 
+Se vacancies in the the film. The height scan from one grain (see \tref{stm-NbSe2}) 
+to another shows \aerr{6.4}{0.1} which corresponds to half the unit-cell height of \nbse.
+
+
+\begin{figure}
+    \centering
+    \ig{0.4}{xps/nbse2-xps.png}
+    \tlabel{xps-NbSe2}
+    \caption{
+        XPS Spectra of \nbse\
+    } 
+\end{figure}
+
+The sample is completely impurity free because we do not see any spurious peak in the XPS
+and is perfectly stoichiometric (Nb:Se = 1:2) (see \tref{xps-NbSe2})

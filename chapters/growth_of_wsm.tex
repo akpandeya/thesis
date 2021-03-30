@@ -1,0 +1,460 @@
+\addchapter{Growth and Characterization of Weyl Semimetals}
+\label{growth_of_wsm}
+
+Weyl semimetals in this study were  grown using Molecular beam epitaxy (MBE) on c-plane 
+of MgO substrate from Crystec. The substrate was cleaned using methanol
+as described in \tref{wsm-substrate} and loaded in \tamarind where it was degassed 
+at \temperature{550} for about 1 hour. Nb(Ta) and P are co evaoparoated 
+from e-beam and K-cells respectively such that ther flx ratio is 1:20. The growth is 
+monitored continuously using RHEED and the stoichiometry and morphology is assessed 
+intermittently using XPS. Once the sample is taken out of the chamber its structure is 
+assessed using XRD.
+
+\section{Choice of Substrate}
+\tlabel{wsm-substrate}
+
+\begin{table}
+    \tlabel{wsm-lattice-table}
+    \caption {
+            Lattice parameters of different materials in the plane of interest
+        }
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        Material & NbP[100] & TaP[100] & Nb[110] & Ta[110] & MgO[110]\\
+        \midrule
+        Lattice \\Parameter $\left(\angstrom\right)$ & 3.33 & 3.34 & 3.30 & 3.30 & 3.03\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.31}{structure/100-MgO.png}
+        \tlabel{structure-MgO-100}
+    }
+    \subfloat[]{
+        \ig{0.31}{structure/100-Nb-Ta.png}
+        \tlabel{structure-Nb_Ta-100}
+    }
+    \subfloat[]{
+        \ig{0.31}{structure/100-NbP-TaP.png}
+        \tlabel{structure-Nb_TaP-100}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{structure/NbP-unit-cell.png}
+        \tlabel{structure-Nb_TaP-unit-cell}
+    }
+    \subfloat[]{
+        \ig{0.31}{structure/wsm-all-layers-unit-cells.png}
+        \tlabel{structure-all-unit-cell}
+    }
+    \caption{
+        Lattice structure of
+        \sfA~ (100) plane of MgO rotated by 45 \degree for clarity, 
+        \sfB~  (100) plane of Nb(Ta),  
+        \sfC~  (100) plane of Nb(Ta)P.
+        \sfD~ Nb(Ta)P unit cell
+        \sfE~ Nb(Ta)P/Nb(Ta)/MgO unit cell,
+    }
+    \tlabel{structure-wsm}
+\end{figure}
+
+The choice of substrate which is lattice matched to Nb(Ta)P is a bit limited by the 
+fact that we need insulating substrate for fabricating electrical and spintronic 
+devices. MgO is one such substrate which can easily be treated to become atomically
+flat and is lattice matched to [100] direction of NbP with [110] direction in the
+substrate as shown in \tref{structure-wsm} and tabulated in \tref{wsm-lattice-table}
+
+\section{Substrate Preparation}
+
+Nb(Ta)P were grown in TAMARIND using MBE on MgO substrates, usually 5$\text(\times)$10 mm in 
+size from the supplier Crystec. The substrate was prepared for growth as follows:
+
+\begin{enumerate}
+    \item Soak the substrate in methanol for 20 minutes.
+    \item Rinse thoroughly in deionized (DI) water thoroughly and blow with dry nitrogen gas.
+    \item Anneal the substrate in O2 atmosphere at \temperature{1050 - 1100} for 3 h.
+\end{enumerate}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{afm/MgO-with-pits.png}
+        \tlabel{afm-MgO-pits}
+    }
+    \subfloat[]{
+        \ig{0.31}{afm/MgO-usable-sample.png}
+        \tlabel{afm-MgO-usable}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{afm/Ls-MgO-with-pits.png}
+        \tlabel{afm-MgO-pits-ls}
+    }
+    \subfloat[]{
+        \ig{0.31}{afm/Ls-MgO-usable-sample.png}
+        \tlabel{afm-MgO-usable-ls}
+    }
+    \caption{
+        AFM of  an MgO substrate 
+        \sfA~ with pits after cleaning, 
+        \sfB~ typical usable sample.
+        Step scan of the substarte  
+        \sfC~ with pits after cleaning,
+        \sfD~ typical usable sample.
+    }
+    \tlabel{afm-MgO}
+\end{figure}
+
+The process is not fully reproducible. Most of the times we would get atomically flat substrates 
+but occasionally we would see pits and sometimes the terrace are not of atomic step height. 
+The representative figure of both such scenarios have been shown in \tref{afm-MgO-pits} and
+\tref{afm-MgO-usable}  with their line scans shown \tref{afm-MgO-pits-ls} and \tref{afm-MgO-usable-ls}
+
+\section{Evaporation of materials}
+
+Ta(Nb) is evaporated from a rod using electron-beam heating and P is evaporated using a 
+GaP effusion cell at \temperature{850}in TAMARIND chamber. The residual P in the chamber sticks to 
+the chamber in two major allotropic forms, \ptwo (red Phosphorous) and \pfour (white 
+phosphorous). The red phosphorus is thermodynamically stable at room temperature but 
+white phosphorous can spontaneously combust at room temperature and turn in lethal phosphine 
+\phosphine gas. Therefore, it is absolutely necessary to keep the white phosphorus
+concentration to as low value as possible. We observe that the ration of 
+\ptwo : \pfour is around 1:100.
+
+\section{Growth of Nb(Ta)P}
+
+
+There is more than 10\% mismatch between the lattice parameters of Nb(Ta)P and MgO.
+If we try to grow these compounds directly on the substrate, the film does not remain 
+crystalline; we start getting islands of these films instead of single crystalline flat 
+films.  It turns out that if we grow a buffer layer of Nb(Ta) before the growth of 
+phosphide, we get high quality single crystalline films. This buffer layer is grown at 
+\temperature{300}, at a rate of 3-5 nm/h and a pressure of \pressure{4}{-10}. The surface 
+of the buffer layer is then exposed to a P2 flux (BEP: \pressure{1}{-8}) to achieve phosphorization.
+Once the buffer layer has been phosphorized the surface is ready for growth of Nb(Ta)P. 
+The substrate temperature is maintained between 300 to 400 ºC and the film is grown at a 
+slow rate of < 4nm/h which is limited by the Nb (Ta) flux. The P flux is at least 20 times 
+higher than the Nb flux and has BEP of \pressure{1}{-8}. The sample is cooled down at the rate of 
+10 \degree C/min in P-atmosphere, to ensure that P-termination surface is homogeneous. 
+
+
+\section{Structure of Weyl NbP and TaP}
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{rheed/MgO_100.png}
+        \tlabel{rheed-MgO-100}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/MgO_110.png}
+        \tlabel{rheed-MgO-110}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{rheed/Nb_100.png}
+        \tlabel{rheed-Nb-100}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/Nb-110.png}
+        \tlabel{rheed-Nb-110}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{rheed/NbP_100_begin.png}
+        \tlabel{rheed-NbP-100-begin}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbP_110_begin.png}
+        \tlabel{rheed-NbP-110-begin}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{rheed/NbP_100_end.png}
+        \tlabel{rheed-NbP-100}
+    }
+    \subfloat[]{
+        \ig{0.31}{rheed/NbP_110_end.png}
+        \tlabel{rheed-NbP-110}
+    }
+    \caption{
+        MgO substrate before growth in
+        \sfA~ \direction{100} 
+        \sfB~ \direction{110}.
+        Nb buffer layer in
+        \sfC~ \direction{100} 
+        \sfD~ \direction{110}.
+        Nb buffer layer after posphorization in
+        \sfE~ \direction{100} 
+        \sfF~ \direction{110}.
+        NbP thin film in
+        \sfG~ \direction{100} 
+        \sfG~ \direction{110}.
+    }
+    \tlabel{rheed-wsm}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{xrd/NbP_theta2theta.png}
+        \tlabel{xrd-NbP-theta}
+    }
+    \subfloat[]{
+        \ig{0.31}{xrd/NbP_rsm.png}
+        \tlabel{xrd-NbP-rsm}
+    }
+    \caption{
+        \sfA~ Theta-2Theta Scan and 
+        \sfB~ RSM scan of 
+        NbP.
+    }
+    \tlabel{xps-wsm}
+\end{figure}
+
+
+The film quality is constantly monitored using in-situ reflection high energy electron diffraction 
+(RHEED) with 15 kV energy and 1.5 mA filament current. We take an atomically flat terraced MgO 
+substrate (\tref{rheed-MgO-100} and \tref{rheed-MgO-110}) and grow a Nb (Ta) buffer layer on it 
+in order to minimize the lattice mismatch. These layers are rotated 45\degree\ with respect to 
+each other i.e. \direction{100} direction of MgO points along the \plane{110} plane of Nb (Ta) 
+as seen in \tref{rheed-Nb-100} and \tref{rheed-Nb-110}. Before starting the growth of Nb(Ta)P 
+we phosphorize the surface in order to minimize the thickness of the buffer layer. The higher 
+order streaks appear during this process and the RHEED pattern becomes a bit more diffusive as 
+shown in \tref{rheed-NbP-100-begin} and \tref{rheed-NbP-110-begin}. It suggests that the grain 
+size is not very large yet. Once the growth starts and grains start to coalesce the RHEED pattern 
+becomes very streaky which suggests that the film starts to follow the terraces of the substrate. 
+The periodic RHEED reflections are only visible in the high symmetry directions (45\degree\ 
+periodicity), while there are no coherent patterns at intermediate angles, indicating that the 
+NbP (TaP) films grow with a single-crystalline orientation without twinning/twisting of in-plane 
+crystalline domains (\tref{rheed-NbP-100} and \tref{rheed-NbP-110}).
+
+A standard θ-2θ scan taken on NbP films of various thicknesses (9-70 nm) shows only 
+(004) and (008) NbP reflections (Fig. 2a), confirming an epitaxial, single crystalline 
+oriented growth without secondary phases. In order to compare the quantification using 
+both local and global methods, a reciprocal space mapping (RSM) scan has been performed 
+on the (1,1,10) reflection of NbP (Fig. 2d), yielding an in-plane lattice parameter of 
+$a=3.391 \angstrom$. The in-plane lattice parameters do not vary from as the thickness 
+is varied from 15nm to 70nm according to the RSM measurements (see Sup. Fig S2), which 
+means that the films do not change the in-plane strain state in the studied thickness range.
+On the other hand, the out-of-plane lattice parameters extracted from the (004) peak positions
+(inset of Fig. 2a) decrease only very slightly (11.50 Å to 11.46 Å) with increasing thickness.
+The negligible thickness dependence of both in-plane and out of-plane parameters suggest that 
+the films grow fully relaxed from the very early stage. Interestingly, the lattice parameters 
+($a=3.39 \angstrom, c=11.48 \angstrom$) sizably differ from the bulk values 
+($a=3.34 \angstrom, c=11.37 \angstrom$), which means that a bigger unit cell is stabilized 
+during the layer-by-layer growth on the MgO(001)/Nb(001) surface.
+
+
+
+\section{Morphology of TaP and NbP}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{afm/NbP_afm.png}
+        \tlabel{afm-NbP}
+    }
+    \subfloat[]{
+        \ig{0.31}{afm/TaP_afm.png}
+        \tlabel{afm-TaP}
+    }\\
+    \subfloat[]{
+        \ig{0.5}{afm/NbP_line_scan.png}
+        \tlabel{afm-NbP-ls}
+    }
+    \caption{
+        \sfA~ AFM of NbP and 
+        \sfB~ AFM of TaP.
+        \sfC~ Line Scan of NbP
+    }
+    \tlabel{afm-wsm}
+\end{figure}
+
+The topography and surface structure of NbP and TaP films is of paramount
+importance for the observation of topological surface states (Fermi-arcs) 
+and was thus investigated by scanning probe microscopy (Figure 4 and Supp. Fig S5).  
+Large-scale atomic force microscopy images (Supp Fig. 5a) reveal a flat topography, 
+yielding root mean square (RMS) roughness values of 0.43 nm. The grain size varies 
+from 50 to 100 nm showing regions of grain coalescence, whereas the inter-grain steps 
+correspond mostly to 1 unit cell height.  In order to investigate the topography inside 
+and between the grains, in-situ scanning tunneling microscopy images have been acquired 
+(Figure 4). Square-and rectangular shaped grains can be identified with two preferred 
+orientations, along 45\degree\ and -45\degree\ on the image axis (i.e. along (100) direction), consistent 
+with the four-fold in-plane crystal symmetry of NbP. A closer look to the grain topography 
+reveals the presence of atomically flat terraces. The height of each step terrace amounts to 
+2.8 \angstrom, corresponding to ¼ unit cell fractions (a single Nb-P monolayer), 
+as depicted in Figure 2b (a structural model of the NbP unit cell along the growth 
+direction (001) is drawn as guide to the eye). We rarely find slight deviations of 
+exact unit cell fractions, which might arise if adjacent grains end in a different 
+(Nb / P) atomic termination or due to the presence of inter-grain stacking faults. 
+From the topography statistics, a predominantly single surface termination (either Nb or P)
+scenario is likely to happen throughout the film surface. Figure 4c and 4d show a 
+zoomed-in topography image comparing NbP and TaP film surfaces, the latter having a 
+smaller terrace width.
+
+
+\section{Stoichiometry of Wel Semimetals}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{xps/Nb_3d.png}
+        \tlabel{xps-Nb-3d}
+    }
+    \subfloat[]{
+        \ig{0.31}{xps/NbP-P-2p.png}
+        \tlabel{xps-NbP-2p}
+    }\\
+    \subfloat[]{
+        \ig{0.31}{xps/Ta-3d.png}
+        \tlabel{xps-Ta-3d}
+    }
+    \subfloat[]{
+        \ig{0.31}{xps/TaP-P-2p.png}
+        \tlabel{xps-TaP-2p}
+    }
+    \caption{
+        \sfA~ Nb 3d peak and
+        \sfB~ P 2p peak in 
+        NbP. 
+        \sfC~ Ta 3d peak and
+        \sfD~ P 2p peak in 
+        TaP.
+    }
+    \tlabel{xps-wsm}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{rbs/NbP_rbs.png}
+        \tlabel{rbs-NbP}
+    }
+    \subfloat[]{
+        \ig{0.31}{rbs/TaP_rbs.png}
+        \tlabel{rbs-TaP}
+    }
+    \caption{
+        RBS spectra of 
+        \sfA~ NbP
+        \sfB~ TaP.
+    }
+    \tlabel{rbs-wsm}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.31}{edx/NbP_edx.png}
+        \tlabel{edx-NbP}
+    }\\
+    \subfloat[]{
+        \ig{0.6}{edx/TaP_edx.png}
+        \tlabel{edx-TaP}
+    }
+    \caption{
+        EDX Spectra of
+        \sfA~ NbP
+        \sfB~ TaP.
+    }
+    \tlabel{edx-wsm}
+\end{figure}
+
+The chemical composition and valence states of the NbP (TaP) thin films have
+ been studied by in-situ X-ray photoemission spectroscopy (XPS) and ex-situ 
+ Rutherford backscattering spectroscopy (RBS).  The Nb 3d 5/2 and P 2p core 
+ level peaks in XPS spectra is shown in \tref{xps-wsm}. The figure shows that Nb 
+ and P peaks shift in opposite directions compared to the neutral Nb0 and P0 
+ valence state. This is consistent with the expected chemical shifts due to 
+ electron transfer in the NbP compound (NbIII and PV valence). The stoichiometry 
+ of the films has been determined using equation (37), yielding a slightly P-rich 
+ (Nb0.49 P0.51) composition. In addition to XPS, which is a surface sensitive technique,
+  the in-depth composition of the films has been studied by Rutherford backscattering 
+  spectroscopy (RBS). The best fitting to the spectra \tref{rbs-wsm}, yields a 
+  47.6\% to 52.4\% (Nb:P) composition, indicating that the P-rich composition 
+  is distributed homogeneously across the full NbP layer.  Similar results with regard 
+  to bonding-related core-level shifts and P-rich composition have been found in TaP 
+  layers which  are show in the same figure. A real-space visualization of the layer 
+  homogeneity is further shown by energy-dispersive X-ray spectroscopy along a NbP and 
+  TaP cross section is shown in \tref{edx-wsm}.
+
+The fine details of the structure are shown in Figure 2c, where a high-resolution 
+high-angle annular dark field (HAADF) STEM image of the NbP in the [110] direction 
+displays highly-ordered in-and out-of-plane lattice planes, with an excellent matching
+to the NbP structural model.  The lattice planes are particularly visible by the high 
+atomic contrast of the Nb atoms, while a faint contrast corresponding to the light P 
+atoms can be distinguished in the zoomed-in image (Figure 2c, right panel) at the 
+expected atomic positions. Taking advantage of the excellent structural order, a line 
+intensity profile of the atomic rows has been taken to calculate the average in-plane 
+lattice parameter of the NbP film (Supp. Figure S1). For the [110] direction, a Nb-Nb 
+atom distance of $2.40 \angstrom$ has been inferred, which results in an in-plane lattice parameter 
+$a=3.394 \angstrom$.  
+
+\section{Reciprocal space characterization of NbP}
+
+  \begin{figure}
+    \centering
+    \subfloat[]{
+        \ig{0.4}{arpes/fermi-surface.png}
+        \tlabel{edx-TaP}
+    }\\
+    \subfloat[]{
+        \ig{0.7}{arpes/cacluated-fermi-surface.png}
+        \tlabel{arpes-NbP-calc-fermi}
+    }
+    \caption{
+        \sfA~ Calculated fermi surface of NbP.
+        \sfB~ Measured fermi surface of NbP
+    }
+    \tlabel{fermi-wsm}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \ig{0.9}{arpes/NbP_tem_weyl.png}
+    \tlabel{arpes-tem-NbP}
+
+    
+    \caption{
+       TEM and ARPES of NbP
+    }
+    \tlabel{arpes-tem-wsm}
+\end{figure}
+
+Having assessed the properties of the film surface, momentum-resolved 
+photoemission spectra have been taken using an in-house designed and built 
+momentum microscope45 with a He-I light source. Figure 5 summarizes the
+overall electronic structure of a 15 nm-thick NbP thin film measured at 
+100K, including Fermi-surface topology and band dispersion along relevant 
+(Weyl point) cuts, together with ab-initio calculations using the experimentally 
+obtained unit cell parameters. At the Fermi-energy, four electronic pockets with 
+an elliptic shape directed towards the X and Y symmetry points can be identified, 
+as shown in Fig. 5a.  A detailed comparison with the calculation of the 
+termination-dependent surface states (Figures 5b and 5c) reveal that the elliptic 
+and cross-like band features along Γ-X and Γ-Y are characteristic of the P-terminated 
+NbP surface states (the features for a Nb-termination are radically different). 
+Interestingly, the size and shape of the measured elliptical (also called spoon-like) 
+features match with the calculations and the bulk crystal data in Refs.10,11,46 only 
+when an energy shift of $\Delta E = 0.2 \text{eV}$. is considered (highlighted 
+in a green box, Figure 5b), suggesting an effective hole doping in the as-grown 
+thin films.  Figure 5d shows the energy dispersion cut along $A \rightarrow A'$, 
+which is expected to cross the location of one pair of Weyl-points in NbP 
+($k_x=0.54 \angstrom^{-1}, E_b = -0.026 eV$) and thus used to visualize the surface 
+Fermi arcs. A clear linear band dispersion is observed, in agreement with previous 
+photoemission results of cleaved monopnictide bulk crystals.6-11  This dispersion 
+originates from the Fermi-arcs, but their kx-ky contour at the Weyl points cannot 
+be mapped in our NbP films due to the EF shift (-0.2 eV) with respect to the intrinsic 
+Fermi-level, and secondly, due the intrinsically short separation of the Weyl points 
+in momentum space ($\Deltak < 0.05 \angstrom-1$), a detection challenge even for high-resolution 
+synchrotron ARPES. It is noteworthy that only these topological surface states (elliptic 
+shape, $A \rightarrow A'$ cut) are observed in our films, whereas the bowtie features
+centered at the X and Y points) are completely absent.  This merits further investigation
+and will be discussed elsewhere. On the other hand, the origin of the effective hole-doping 
+in the as-grown thin films can be attributed to residual acceptors (Nb-vacancies) arising 
+from the MBE growth process, in agreement with the slightly P-rich composition of the films 
+inferred by XPS and RBS.  The strained lattice parameters of the phosphide thin films 
+will also have an effect on the Fermi-level position. Although we estimate that the effect 
+of the lattice parameters (~1\% tensile strain) is rather small, further studies are needed 
+to disentangle the contribution from strain and vacancy acceptors on EF, in order to get a 
+full understanding of Fermi-level engineering of Weyl semimetals achieved by epitaxial design.
