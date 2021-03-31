@@ -44,5 +44,5 @@
 \contentsline {section}{\numberline {7.3}STFMR of \ensuremath {\text {NbSe}_{\text {2}}}}{51}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Second Harmonic of Weyl Semimetals}{51}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Comparison of different materials}{51}{section.7.5}%
-\contentsline {chapter}{\nonumberline Eidesstattliche Erklaerung\\ (Statutory declaration)}{53}{chapter*.29}%
-\contentsline {chapter}{\nonumberline Acknowledgements}{55}{chapter*.30}%
+\contentsline {chapter}{\nonumberline Eidesstattliche Erklaerung\\ (Statutory declaration)}{53}{chapter*.30}%
+\contentsline {chapter}{\nonumberline Acknowledgements}{55}{chapter*.31}%
