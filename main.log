@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.24)  30 MAR 2021 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.24)  31 MAR 2021 07:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1858,12 +1858,17 @@ Overfull \hbox (7.76518pt too wide) in paragraph at lines 230--238
 File: fig/growth_of_nbse2/stm/Nbse_3d_stm.png Graphic file (type png)
 <use fig/growth_of_nbse2/stm/Nbse_3d_stm.png>
 Package pdftex.def Info: fig/growth_of_nbse2/stm/Nbse_3d_stm.png  used on input line 242.
-(pdftex.def)             Requested size: 173.81784pt x 175.51552pt.
-<fig/growth_of_nbse2/stm/NbSe2_step_height.png, id=327, 109.3686pt x 109.3686pt>
-File: fig/growth_of_nbse2/stm/NbSe2_step_height.png Graphic file (type png)
-<use fig/growth_of_nbse2/stm/NbSe2_step_height.png>
-Package pdftex.def Info: fig/growth_of_nbse2/stm/NbSe2_step_height.png  used on input line 246.
-(pdftex.def)             Requested size: 173.81784pt x 173.8318pt.
+(pdftex.def)             Requested size: 165.13159pt x 166.7424pt.
+<fig/growth_of_nbse2/stm/NbSe2_step_height.pdf, id=327, 825.0825pt x 577.15625pt>
+File: fig/growth_of_nbse2/stm/NbSe2_step_height.pdf Graphic file (type pdf)
+<use fig/growth_of_nbse2/stm/NbSe2_step_height.pdf>
+Package pdftex.def Info: fig/growth_of_nbse2/stm/NbSe2_step_height.pdf  used on input line 246.
+(pdftex.def)             Requested size: 252.04051pt x 176.301pt.
+
+Overfull \hbox (8.07883pt too wide) in paragraph at lines 242--254
+ [][][][] 
+ []
+
 
 LaTeX Warning: Reference `gn:stm-NbSe2' on page 1 undefined on input line 260.
 
@@ -1885,24 +1890,24 @@ LaTeX Warning: Reference `gn:xps-NbSe2' on page 1 undefined on input line 276.
 Package cleveref Info: loaded `english' language definitions on input line 1.
  [32 </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/tem/NbSe2-tem.png>]
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [33 </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_4ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_8ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_15ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/Nbse_3d_stm.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_step_height.png>]
+ [33 </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_4ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_8ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_15ML.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/Nbse_3d_stm.png> </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/stm/NbSe2_step_height.pdf>]
 Package cleveref Info: loaded `english' language definitions on input line 1.
  [34 </Users/pandeya/Documents/thesis/fig/growth_of_nbse2/xps/nbse2-xps.pdf>]
 chapter 5.
 
 LaTeX Warning: Reference `gw:wsm-substrate' on page 1 undefined on input line 6.
 
-<fig/growth_of_wsm/structure/100-MgO.png, id=373, 167.1846pt x 167.1846pt>
+<fig/growth_of_wsm/structure/100-MgO.png, id=389, 167.1846pt x 167.1846pt>
 File: fig/growth_of_wsm/structure/100-MgO.png Graphic file (type png)
 <use fig/growth_of_wsm/structure/100-MgO.png>
 Package pdftex.def Info: fig/growth_of_wsm/structure/100-MgO.png  used on input line 38.
 (pdftex.def)             Requested size: 134.70982pt x 134.71724pt.
-<fig/growth_of_wsm/structure/100-Nb-Ta.png, id=374, 173.448pt x 163.3302pt>
+<fig/growth_of_wsm/structure/100-Nb-Ta.png, id=390, 173.448pt x 163.3302pt>
 File: fig/growth_of_wsm/structure/100-Nb-Ta.png Graphic file (type png)
 <use fig/growth_of_wsm/structure/100-Nb-Ta.png>
 Package pdftex.def Info: fig/growth_of_wsm/structure/100-Nb-Ta.png  used on input line 42.
 (pdftex.def)             Requested size: 134.70982pt x 126.8587pt.
-<fig/growth_of_wsm/structure/100-NbP-TaP.png, id=375, 140.2038pt x 134.4222pt>
+<fig/growth_of_wsm/structure/100-NbP-TaP.png, id=391, 140.2038pt x 134.4222pt>
 File: fig/growth_of_wsm/structure/100-NbP-TaP.png Graphic file (type png)
 <use fig/growth_of_wsm/structure/100-NbP-TaP.png>
 Package pdftex.def Info: fig/growth_of_wsm/structure/100-NbP-TaP.png  used on input line 46.
@@ -1912,12 +1917,12 @@ Overfull \hbox (7.76518pt too wide) in paragraph at lines 38--46
  [][][][][][] 
  []
 
-<fig/growth_of_wsm/structure/NbP-unit-cell.png, id=376, 92.0238pt x 200.4288pt>
+<fig/growth_of_wsm/structure/NbP-unit-cell.png, id=392, 92.0238pt x 200.4288pt>
 File: fig/growth_of_wsm/structure/NbP-unit-cell.png Graphic file (type png)
 <use fig/growth_of_wsm/structure/NbP-unit-cell.png>
 Package pdftex.def Info: fig/growth_of_wsm/structure/NbP-unit-cell.png  used on input line 50.
 (pdftex.def)             Requested size: 134.70982pt x 293.42181pt.
-<fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png, id=377, 138.2766pt x 189.3474pt>
+<fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png, id=393, 138.2766pt x 189.3474pt>
 File: fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png Graphic file (type png)
 <use fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png>
 Package pdftex.def Info: fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png  used on input line 54.
@@ -1934,22 +1939,22 @@ LaTeX Warning: Reference `gw:wsm-lattice-table' on page 1 undefined on input lin
 ]
 Package cleveref Info: loaded `english' language definitions on input line 71.
  [36 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/structure/100-MgO.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/structure/100-Nb-Ta.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/structure/100-NbP-TaP.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/structure/NbP-unit-cell.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/structure/wsm-all-layers-unit-cells.png>]
-<fig/growth_of_wsm/afm/MgO-with-pits.png, id=400, 214.401pt x 213.4374pt>
+<fig/growth_of_wsm/afm/MgO-with-pits.png, id=416, 214.401pt x 213.4374pt>
 File: fig/growth_of_wsm/afm/MgO-with-pits.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/MgO-with-pits.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/MgO-with-pits.png  used on input line 88.
 (pdftex.def)             Requested size: 134.70982pt x 134.108pt.
-<fig/growth_of_wsm/afm/MgO-usable-sample.png, id=401, 213.4374pt x 213.4374pt>
+<fig/growth_of_wsm/afm/MgO-usable-sample.png, id=417, 213.4374pt x 213.4374pt>
 File: fig/growth_of_wsm/afm/MgO-usable-sample.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/MgO-usable-sample.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/MgO-usable-sample.png  used on input line 92.
 (pdftex.def)             Requested size: 134.70982pt x 134.71703pt.
-<fig/growth_of_wsm/afm/Ls-MgO-with-pits.png, id=402, 213.4374pt x 172.4844pt>
+<fig/growth_of_wsm/afm/Ls-MgO-with-pits.png, id=418, 213.4374pt x 172.4844pt>
 File: fig/growth_of_wsm/afm/Ls-MgO-with-pits.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/Ls-MgO-with-pits.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/Ls-MgO-with-pits.png  used on input line 96.
 (pdftex.def)             Requested size: 134.70982pt x 108.8684pt.
-<fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png, id=403, 214.401pt x 171.5208pt>
+<fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png, id=419, 214.401pt x 171.5208pt>
 File: fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png  used on input line 100.
@@ -1971,52 +1976,52 @@ Package cleveref Info: loaded `english' language definitions on input line 143.
 [37]
 Package cleveref Info: loaded `english' language definitions on input line 143.
  [38 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/MgO-with-pits.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/MgO-usable-sample.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/Ls-MgO-with-pits.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/Ls-MgO-usable-sample.png>]
-<fig/growth_of_wsm/rheed/MgO_100.png, id=428, 181.6386pt x 61.1886pt>
+<fig/growth_of_wsm/rheed/MgO_100.png, id=445, 181.6386pt x 61.1886pt>
 File: fig/growth_of_wsm/rheed/MgO_100.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/MgO_100.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/MgO_100.png  used on input line 151.
 (pdftex.def)             Requested size: 134.70982pt x 45.38248pt.
-<fig/growth_of_wsm/rheed/MgO_110.png, id=429, 161.403pt x 61.1886pt>
+<fig/growth_of_wsm/rheed/MgO_110.png, id=446, 161.403pt x 61.1886pt>
 File: fig/growth_of_wsm/rheed/MgO_110.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/MgO_110.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/MgO_110.png  used on input line 155.
 (pdftex.def)             Requested size: 134.70982pt x 51.0722pt.
-<fig/growth_of_wsm/rheed/Nb_100.png, id=430, 160.4394pt x 56.8524pt>
+<fig/growth_of_wsm/rheed/Nb_100.png, id=447, 160.4394pt x 56.8524pt>
 File: fig/growth_of_wsm/rheed/Nb_100.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/Nb_100.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/Nb_100.png  used on input line 159.
 (pdftex.def)             Requested size: 134.70982pt x 47.73485pt.
-<fig/growth_of_wsm/rheed/Nb-110.png, id=431, 179.2296pt x 56.8524pt>
+<fig/growth_of_wsm/rheed/Nb-110.png, id=448, 179.2296pt x 56.8524pt>
 File: fig/growth_of_wsm/rheed/Nb-110.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/Nb-110.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/Nb-110.png  used on input line 163.
 (pdftex.def)             Requested size: 134.70982pt x 42.73286pt.
-<fig/growth_of_wsm/rheed/NbP_100_begin.png, id=432, 160.4394pt x 76.1244pt>
+<fig/growth_of_wsm/rheed/NbP_100_begin.png, id=449, 160.4394pt x 76.1244pt>
 File: fig/growth_of_wsm/rheed/NbP_100_begin.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/NbP_100_begin.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/NbP_100_begin.png  used on input line 167.
 (pdftex.def)             Requested size: 134.70982pt x 63.91617pt.
-<fig/growth_of_wsm/rheed/NbP_110_begin.png, id=433, 179.2296pt x 75.1608pt>
+<fig/growth_of_wsm/rheed/NbP_110_begin.png, id=450, 179.2296pt x 75.1608pt>
 File: fig/growth_of_wsm/rheed/NbP_110_begin.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/NbP_110_begin.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/NbP_110_begin.png  used on input line 171.
 (pdftex.def)             Requested size: 134.70982pt x 56.49431pt.
-<fig/growth_of_wsm/rheed/NbP_100_end.png, id=434, 160.4394pt x 82.8696pt>
+<fig/growth_of_wsm/rheed/NbP_100_end.png, id=451, 160.4394pt x 82.8696pt>
 File: fig/growth_of_wsm/rheed/NbP_100_end.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/NbP_100_end.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/NbP_100_end.png  used on input line 175.
 (pdftex.def)             Requested size: 134.70982pt x 69.5796pt.
-<fig/growth_of_wsm/rheed/NbP_110_end.png, id=435, 180.675pt x 82.8696pt>
+<fig/growth_of_wsm/rheed/NbP_110_end.png, id=452, 180.675pt x 82.8696pt>
 File: fig/growth_of_wsm/rheed/NbP_110_end.png Graphic file (type png)
 <use fig/growth_of_wsm/rheed/NbP_110_end.png>
 Package pdftex.def Info: fig/growth_of_wsm/rheed/NbP_110_end.png  used on input line 179.
 (pdftex.def)             Requested size: 134.70982pt x 61.78659pt.
-<fig/growth_of_wsm/xrd/NbP_theta2theta.png, id=436, 219.7008pt x 166.221pt>
+<fig/growth_of_wsm/xrd/NbP_theta2theta.png, id=453, 219.7008pt x 166.221pt>
 File: fig/growth_of_wsm/xrd/NbP_theta2theta.png Graphic file (type png)
 <use fig/growth_of_wsm/xrd/NbP_theta2theta.png>
 Package pdftex.def Info: fig/growth_of_wsm/xrd/NbP_theta2theta.png  used on input line 202.
 (pdftex.def)             Requested size: 134.70982pt x 101.9222pt.
-<fig/growth_of_wsm/xrd/NbP_rsm.png, id=437, 205.7286pt x 180.675pt>
+<fig/growth_of_wsm/xrd/NbP_rsm.png, id=454, 205.7286pt x 180.675pt>
 File: fig/growth_of_wsm/xrd/NbP_rsm.png Graphic file (type png)
 <use fig/growth_of_wsm/xrd/NbP_rsm.png>
 Package pdftex.def Info: fig/growth_of_wsm/xrd/NbP_rsm.png  used on input line 206.
@@ -2076,59 +2081,59 @@ Package cleveref Info: loaded `english' language definitions on input line 247.
 [39]
 Package cleveref Info: loaded `english' language definitions on input line 247.
  [40 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/MgO_100.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/MgO_110.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/Nb_100.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/Nb-110.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/NbP_100_begin.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/NbP_110_begin.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/NbP_100_end.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rheed/NbP_110_end.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xrd/NbP_theta2theta.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xrd/NbP_rsm.png>]
-<fig/growth_of_wsm/afm/NbP_afm.png, id=470, 283.7802pt x 242.8272pt>
+<fig/growth_of_wsm/afm/NbP_afm.png, id=486, 283.7802pt x 242.8272pt>
 File: fig/growth_of_wsm/afm/NbP_afm.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/NbP_afm.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/NbP_afm.png  used on input line 257.
 (pdftex.def)             Requested size: 134.70982pt x 115.27371pt.
-<fig/growth_of_wsm/afm/TaP_afm.png, id=471, 274.626pt x 242.8272pt>
+<fig/growth_of_wsm/afm/TaP_afm.png, id=487, 274.626pt x 242.8272pt>
 File: fig/growth_of_wsm/afm/TaP_afm.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/TaP_afm.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/TaP_afm.png  used on input line 261.
 (pdftex.def)             Requested size: 134.70982pt x 119.10863pt.
-<fig/growth_of_wsm/afm/NbP_line_scan.png, id=472, 434.5836pt x 239.4546pt>
+<fig/growth_of_wsm/afm/NbP_line_scan.png, id=488, 434.5836pt x 239.4546pt>
 File: fig/growth_of_wsm/afm/NbP_line_scan.png Graphic file (type png)
 <use fig/growth_of_wsm/afm/NbP_line_scan.png>
 Package pdftex.def Info: fig/growth_of_wsm/afm/NbP_line_scan.png  used on input line 265.
 (pdftex.def)             Requested size: 217.27562pt x 119.71603pt.
 Package cleveref Info: loaded `english' language definitions on input line 295.
  [41 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/NbP_afm.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/TaP_afm.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/afm/NbP_line_scan.png>]
-<fig/growth_of_wsm/xps/Nb_3d.png, id=484, 229.8186pt x 166.221pt>
+<fig/growth_of_wsm/xps/Nb_3d.png, id=500, 229.8186pt x 166.221pt>
 File: fig/growth_of_wsm/xps/Nb_3d.png Graphic file (type png)
 <use fig/growth_of_wsm/xps/Nb_3d.png>
 Package pdftex.def Info: fig/growth_of_wsm/xps/Nb_3d.png  used on input line 304.
 (pdftex.def)             Requested size: 134.70982pt x 97.4329pt.
-<fig/growth_of_wsm/xps/NbP-P-2p.png, id=485, 227.4096pt x 166.221pt>
+<fig/growth_of_wsm/xps/NbP-P-2p.png, id=501, 227.4096pt x 166.221pt>
 File: fig/growth_of_wsm/xps/NbP-P-2p.png Graphic file (type png)
 <use fig/growth_of_wsm/xps/NbP-P-2p.png>
 Package pdftex.def Info: fig/growth_of_wsm/xps/NbP-P-2p.png  used on input line 308.
 (pdftex.def)             Requested size: 134.70982pt x 98.46265pt.
-<fig/growth_of_wsm/xps/Ta-3d.png, id=486, 204.2832pt x 156.585pt>
+<fig/growth_of_wsm/xps/Ta-3d.png, id=502, 204.2832pt x 156.585pt>
 File: fig/growth_of_wsm/xps/Ta-3d.png Graphic file (type png)
 <use fig/growth_of_wsm/xps/Ta-3d.png>
 Package pdftex.def Info: fig/growth_of_wsm/xps/Ta-3d.png  used on input line 312.
 (pdftex.def)             Requested size: 134.70982pt x 103.25562pt.
-<fig/growth_of_wsm/xps/TaP-P-2p.png, id=487, 218.7372pt x 159.4758pt>
+<fig/growth_of_wsm/xps/TaP-P-2p.png, id=503, 218.7372pt x 159.4758pt>
 File: fig/growth_of_wsm/xps/TaP-P-2p.png Graphic file (type png)
 <use fig/growth_of_wsm/xps/TaP-P-2p.png>
 Package pdftex.def Info: fig/growth_of_wsm/xps/TaP-P-2p.png  used on input line 316.
 (pdftex.def)             Requested size: 134.70982pt x 98.21451pt.
-<fig/growth_of_wsm/rbs/NbP_rbs.png, id=488, 228.3732pt x 169.5936pt>
+<fig/growth_of_wsm/rbs/NbP_rbs.png, id=504, 228.3732pt x 169.5936pt>
 File: fig/growth_of_wsm/rbs/NbP_rbs.png Graphic file (type png)
 <use fig/growth_of_wsm/rbs/NbP_rbs.png>
 Package pdftex.def Info: fig/growth_of_wsm/rbs/NbP_rbs.png  used on input line 333.
 (pdftex.def)             Requested size: 134.70982pt x 100.04123pt.
-<fig/growth_of_wsm/rbs/TaP_rbs.png, id=489, 169.5936pt x 153.2124pt>
+<fig/growth_of_wsm/rbs/TaP_rbs.png, id=505, 169.5936pt x 153.2124pt>
 File: fig/growth_of_wsm/rbs/TaP_rbs.png Graphic file (type png)
 <use fig/growth_of_wsm/rbs/TaP_rbs.png>
 Package pdftex.def Info: fig/growth_of_wsm/rbs/TaP_rbs.png  used on input line 337.
 (pdftex.def)             Requested size: 134.70982pt x 121.70741pt.
-<fig/growth_of_wsm/edx/NbP_edx.png, id=490, 179.2296pt x 114.1866pt>
+<fig/growth_of_wsm/edx/NbP_edx.png, id=506, 179.2296pt x 114.1866pt>
 File: fig/growth_of_wsm/edx/NbP_edx.png Graphic file (type png)
 <use fig/growth_of_wsm/edx/NbP_edx.png>
 Package pdftex.def Info: fig/growth_of_wsm/edx/NbP_edx.png  used on input line 351.
 (pdftex.def)             Requested size: 134.70982pt x 85.8279pt.
-<fig/growth_of_wsm/edx/TaP_edx.png, id=491, 373.395pt x 114.1866pt>
+<fig/growth_of_wsm/edx/TaP_edx.png, id=507, 373.395pt x 114.1866pt>
 File: fig/growth_of_wsm/edx/TaP_edx.png Graphic file (type png)
 <use fig/growth_of_wsm/edx/TaP_edx.png>
 Package pdftex.def Info: fig/growth_of_wsm/edx/TaP_edx.png  used on input line 355.
@@ -2147,19 +2152,19 @@ Package cleveref Info: loaded `english' language definitions on input line 381.
 [42]
 Package cleveref Info: loaded `english' language definitions on input line 381.
  [43 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xps/Nb_3d.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xps/NbP-P-2p.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xps/Ta-3d.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/xps/TaP-P-2p.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rbs/NbP_rbs.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/rbs/TaP_rbs.png>]
-<fig/growth_of_wsm/arpes/fermi-surface.png, id=517, 259.6902pt x 273.6624pt>
+<fig/growth_of_wsm/arpes/fermi-surface.png, id=533, 259.6902pt x 273.6624pt>
 File: fig/growth_of_wsm/arpes/fermi-surface.png Graphic file (type png)
 <use fig/growth_of_wsm/arpes/fermi-surface.png>
 Package pdftex.def Info: fig/growth_of_wsm/arpes/fermi-surface.png  used on input line 401.
 (pdftex.def)             Requested size: 173.81784pt x 183.16911pt.
-<fig/growth_of_wsm/arpes/cacluated-fermi-surface.png, id=518, 419.166pt x 262.581pt>
+<fig/growth_of_wsm/arpes/cacluated-fermi-surface.png, id=534, 419.166pt x 262.581pt>
 File: fig/growth_of_wsm/arpes/cacluated-fermi-surface.png Graphic file (type png)
 <use fig/growth_of_wsm/arpes/cacluated-fermi-surface.png>
 Package pdftex.def Info: fig/growth_of_wsm/arpes/cacluated-fermi-surface.png  used on input line 405.
 (pdftex.def)             Requested size: 304.18454pt x 190.55264pt.
 Package cleveref Info: loaded `english' language definitions on input line 411.
  [44 </Users/pandeya/Documents/thesis/fig/growth_of_wsm/edx/NbP_edx.png> </Users/pandeya/Documents/thesis/fig/growth_of_wsm/edx/TaP_edx.png>]
-<fig/growth_of_wsm/arpes/NbP_tem_weyl.png, id=528, 434.5836pt x 235.6002pt>
+<fig/growth_of_wsm/arpes/NbP_tem_weyl.png, id=544, 434.5836pt x 235.6002pt>
 File: fig/growth_of_wsm/arpes/NbP_tem_weyl.png Graphic file (type png)
 <use fig/growth_of_wsm/arpes/NbP_tem_weyl.png>
 Package pdftex.def Info: fig/growth_of_wsm/arpes/NbP_tem_weyl.png  used on input line 415.
@@ -2191,17 +2196,6 @@ l.435 ...ross-like band features along Γ-X and Γ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-/Users/pandeya/Documents/thesis/chapters/growth_of_wsm.tex:449: Undefined control sequence.
-<recently read> \Deltak 
-                        
-l.449 in momentum space ($\Deltak
-                                  < 0.05 \angstrom-1$), a detection challeng...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ) (/Users/pandeya/Documents/thesis/chapters/electrical_properties.tex
 Package cleveref Info: loaded `english' language definitions on input line 1.
  [45]
@@ -2217,10 +2211,84 @@ chapter 6.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 3.
 
-) (/Users/pandeya/Documents/thesis/chapters/spin_to_charge_conversion.tex [49] [50
+<fig/electrical_properties/NbSe2-rheed-worst.png, id=569, 228.855pt x 114.4275pt>
+File: fig/electrical_properties/NbSe2-rheed-worst.png Graphic file (type png)
+<use fig/electrical_properties/NbSe2-rheed-worst.png>
+Package pdftex.def Info: fig/electrical_properties/NbSe2-rheed-worst.png  used on input line 10.
+(pdftex.def)             Requested size: 134.70982pt x 67.35799pt.
+<fig/electrical_properties/NbSe2-rheed-bad.png, id=570, 232.87pt x 112.42pt>
+File: fig/electrical_properties/NbSe2-rheed-bad.png Graphic file (type png)
+<use fig/electrical_properties/NbSe2-rheed-bad.png>
+Package pdftex.def Info: fig/electrical_properties/NbSe2-rheed-bad.png  used on input line 14.
+(pdftex.def)             Requested size: 134.70982pt x 65.03381pt.
+<fig/electrical_properties/NbSe2-rheed-good.png, id=571, 234.8775pt x 115.43124pt>
+File: fig/electrical_properties/NbSe2-rheed-good.png Graphic file (type png)
+<use fig/electrical_properties/NbSe2-rheed-good.png>
+Package pdftex.def Info: fig/electrical_properties/NbSe2-rheed-good.png  used on input line 18.
+(pdftex.def)             Requested size: 134.70982pt x 66.20335pt.
 
+Overfull \hbox (7.76518pt too wide) in paragraph at lines 10--18
+ [][][][][][] 
+ []
 
-]
+<fig/electrical_properties/nbse2-raman-worst.pdf, id=572, 825.0825pt x 577.15625pt>
+File: fig/electrical_properties/nbse2-raman-worst.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-raman-worst.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-raman-worst.pdf  used on input line 22.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+<fig/electrical_properties/nbse2-raman-bad.pdf, id=573, 825.0825pt x 577.15625pt>
+File: fig/electrical_properties/nbse2-raman-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-raman-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-raman-bad.pdf  used on input line 26.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+File: fig/electrical_properties/nbse2-raman-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-raman-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-raman-bad.pdf  used on input line 30.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+
+Overfull \hbox (7.76518pt too wide) in paragraph at lines 22--30
+ [][][][][][] 
+ []
+
+<fig/electrical_properties/nbse2-electrical-worst.pdf, id=574, 825.0825pt x 577.15625pt>
+File: fig/electrical_properties/nbse2-electrical-worst.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-worst.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-worst.pdf  used on input line 34.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+<fig/electrical_properties/nbse2-electrical-bad.pdf, id=575, 825.0825pt x 577.15625pt>
+File: fig/electrical_properties/nbse2-electrical-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-bad.pdf  used on input line 38.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+File: fig/electrical_properties/nbse2-electrical-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-bad.pdf  used on input line 42.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+
+Overfull \hbox (7.76518pt too wide) in paragraph at lines 34--42
+ [][][][][][] 
+ []
+
+File: fig/electrical_properties/nbse2-electrical-worst.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-worst.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-worst.pdf  used on input line 46.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+File: fig/electrical_properties/nbse2-electrical-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-bad.pdf  used on input line 50.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+File: fig/electrical_properties/nbse2-electrical-bad.pdf Graphic file (type pdf)
+<use fig/electrical_properties/nbse2-electrical-bad.pdf>
+Package pdftex.def Info: fig/electrical_properties/nbse2-electrical-bad.pdf  used on input line 54.
+(pdftex.def)             Requested size: 134.70982pt x 94.2315pt.
+
+Overfull \hbox (7.76518pt too wide) in paragraph at lines 46--54
+ [][][][][][] 
+ []
+
+) (/Users/pandeya/Documents/thesis/chapters/spin_to_charge_conversion.tex [49]
+Package cleveref Info: loaded `english' language definitions on input line 1.
+ [50 </Users/pandeya/Documents/thesis/fig/electrical_properties/NbSe2-rheed-worst.png> </Users/pandeya/Documents/thesis/fig/electrical_properties/NbSe2-rheed-bad.png> </Users/pandeya/Documents/thesis/fig/electrical_properties/NbSe2-rheed-good.png> </Users/pandeya/Documents/thesis/fig/electrical_properties/nbse2-raman-worst.pdf> </Users/pandeya/Documents/thesis/fig/electrical_properties/nbse2-raman-bad.pdf> </Users/pandeya/Documents/thesis/fig/electrical_properties/nbse2-electrical-worst.pdf> </Users/pandeya/Documents/thesis/fig/electrical_properties/nbse2-electrical-bad.pdf>]
 chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2234,7 +2302,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 8.
 
-) (/Users/pandeya/Documents/thesis/endmatter/statutory.tex [51] [52
+) (/Users/pandeya/Documents/thesis/endmatter/statutory.tex [51
+
+
+] [52
 
 
 ]
@@ -2333,18 +2404,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36159 strings out of 480608
- 676785 string characters out of 5903630
+ 36242 strings out of 480608
+ 679766 string characters out of 5903630
  1509860 words of memory out of 5000000
- 50980 multiletter control sequences out of 15000+600000
- 770488 words of font info for 255 fonts, out of 8000000 for 9000
+ 51043 multiletter control sequences out of 15000+600000
+ 770401 words of font info for 254 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,13n,108p,10158b,2281s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/pandeya/Documents/thesis/main.pdf (55 pages, 8942428 bytes).
+Output written on /Users/pandeya/Documents/thesis/main.pdf (55 pages, 9236884 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 238 named destinations out of 1000 (max. 500000)
- 54941 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 979 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
+ 251 named destinations out of 1000 (max. 500000)
+ 54976 words of extra memory for PDF output out of 61914 (max. 10000000)
 
