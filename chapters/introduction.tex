@@ -1,94 +1,117 @@
-\addchapter{Introduction}
-\label{introduction}
+\addchapter{Motivation and Background}
+\label{Introduction}
 
-\section{Moore’s Law – Room at the bottom is shrinking}
+
+\section{Emergent properties in quantum materials}
+Emergence is appearance of a new property in a collection of items where none of 
+the individual item has that property. \cite{Anderson1972}.
+The collective behaviour of electrons in a solid is different than behavior of a single electron. 
+Such properties of electrons are also known as emergent properties of the material. These often arise due to interaction of different 
+electronic sates in a solid. It is important to understand the how charge, spin and and orbital degree
+of freedom interact in quantum materials to give rise to emergent properties like topology,
+superconductivity etc not just for advancing the fundamental science but also for making the
+next generation of devices beyond CMOS \cite{TokuaraEmergent}.
+
 The number of transistors per unit area in electronic circuit keeps doubling almost every two years. 
-It was first observed by Gordon Moore in his 1965 paper. In many ways Moore’s law has been surpassed 
-so far. Aggressive scaling of electronic devices which has followed Moore’s law has made “plenty of room” 
-for storage and devices as Feynman had once envisaged in his famous lecture. But pace of growth is plateauing 
-and the there is a limit to where CMOS can take us. 
+It was first observed by Gordon Moore in his 1965 paper. In many ways Moore's law has been surpassed 
+so far. Aggressive scaling of electronic devices which has followed Moore's law has made \emph{plenty of room}
+for storage and devices as Feynman had once envisaged in his famous lecture \cite{feynman1960engineering}. But pace of growth is plateauing 
+and the there is a limit to where complementary cetal oxide semiconductor (CMOS) can take us. 
 
-Memory devices has similarly experienced a lot of growth dues to scaling but we are reaching the limits of what
-can be achieved. The main form in which data is stored is magnetic bits and these bits are read and written using
-magnetic read/write head. 
+The main form in which data is stored is magnetic bits and these bits are read and written using
+magnetic read/write head. Memory devices have similarly experienced a lot of growth dues to 
+scaling but we are reaching the limits of what can be achieved with traditional materials \cite{Bader2010}.
+
 
 \section{Spintronics for scaling and beyond}
-The key to achieving this is making sure that any internal status of
-computation is stored before power is turned off, without consuming
-power. Non-volatile RAM is therefore a critical component. It
-offers an infinite number of fast write and read operations as well
-as non-volatility. Furthermore, this memory is free of soft-errors
-caused by radiation. Spin-transfer torque RAM
+The Random Access Memory (RAM) encodes the information in a capcitor using charge 
+of the electron. It means that we need to recharge the capacitors very often in order 
+to persist the information. As the device size shrinks, the  thickness of insulating layer
+needs to be decreased in order to get to the same voltage levvel. This means that thickness of 
+the insulating layer is decreased and hence leakage current increases which leads to wasted energy.
+Thus by decreasing the size of RAM leads to higher refresh rate for capacitor and more wasted energy
+on recharging capacitor \cite{Jacob2008}.
+
+This problem can be solved by switching from the conventional RAM to Magnetic Random Access Memory (MRAM). 
+It consists of a three layers - an insulating oxide sandwiched between feromagnets. 
+When magnetizations of the two ferromagnetic layers are parallel to each other the the 
+resistance of the stack is low and current can be easily passed through it. On the other 
+hand when the magnetizations are anti-parallel the resistance of the stack is high and no 
+current can be passed through it. Thus, we can store 0 and 1 state in the 
+this device \cite{Inomata2001}.
+
+One of the ferromagnets - called free layer - can be easily flipped from one 
+magnetization to another by passing electrons one kind of spin.This mechanism 
+of flipping the magnetization of a ferromagnet by using spin of the electrons
+is called spin transfer torque(STT). The other ferromagnet - called fixed layer - has higher
+coercivity and cannot easily switched. This is usually achieved by making the fixed layer 
+thicker than the free layer. By changing the magnetization of the free layer 
+using STT we can write information into this MRAM and hence is also called
+STT-MRAM \cite{Hirota2002}.
+
+Unfortunately, the STT mechanism has inherent drawback that the current must pass through
+the thin oxide layer. This produces a lot of heat and may damage the information stored in the
+MRAM. Another mechanism called spin-orbit torque (SOT) was proposed to overcome this limitation.
+The spin current is generated using other means and the reading and writing path of the 
+MRAM is spearted. This means that we no longer have to pass current through the oxide
+layer to write information in the SOT-MRAM \cite{spintronic-sarma}.
 
 \section{Quantum materials for spintronics}
-Nominally highly spin-polarized materials, as discussed
-in the previous sections, could provide both effective
-spin injection into nonmagnetic materials and
-large magnetoresistance effects, important for nonvolatile
-applications. Examples include half-metallic oxides
-such as CrO2, Fe3O4 , CMR materials, and double per
-Most of the currently studied ferromagnetic semiconductors
-are p-doped with holes as spin-polarized carriers,
-which typically leads to lower mobilities and
-shorter spin relaxation times than in n-doped materials.
-It is possible to use selective doping to substantially increase
-Tc , as compared to the uniformly doped bulk
-ferromagnetic semiconductors
+We need materials which can generate spin current to write information in
+SOT-MRAMs. A number of rare earth metals like Pt, W etc.  have been found to be very efficient
+in converting charge current into spin current. We need to explore more such materials
+(i) to understand the mechanism of charge to spin conversion and (ii) explore materials
+which can have possibly higher spin-to-charge conversion efffciency. The two classes of
+materials which can be further explored are (i) Transition Metal Dichalcogenides (TMDs) and 
+(ii) Weyl semimetals \cite{TokuaraEmergent}.
 
 \section{Dichalcogenides}
 
-Graphene is not the only prominent example of two-dimensional (2D) materials. Due to their
-interesting combination of high mechanical strength and optical transparency, direct bandgap
-and atomic scale thickness transition-metal dichalcogenides (TMDCs) are an example of
-other materials that are now vying for the attention of the materials research community. In this
-article, the current state of quantum-theoretical calculations of the electronic and mechanical
-properties of semiconducting TMDC materials are presented. In particular, the intriguing
-interplay between external parameters (electric fi eld, strain) and band structure, as well as
-the basic properties of heterostructures formed by vertical stacking of different 2D TMDCs
-are reviewed. Electrical measurements of MoS 2 , WS 2 , and WSe 2 and their heterostructures,
-starting from simple fi eld-effect transistors to more demanding logic circuits, high-frequency
-transistors, and memory devices, are also presented.
+Transition Metal Dichalogenides  or just dichalcogenides are materials of the formula
+\ce{MX2}, where where M is a transition metal element and X is a chalcogen atom. Transition
+metals belong to group IV - VI of periodic table while chalcogen atom is either S, Se
+or Te. Like graphene these materials can be easily exfoliated and studied and therefore,
+wide range of experiments have been performed on them. But the experiments to study 
+spin-orbit torque require us to make clean heterostructures. Exfoliation
+is not best suited method to make such heterstructures. A clean method like molecular beam
+epitaxy would be better-suited for such experiments \cite{Manzeli}.
 
-\section{Weyl semi-metals}
-Weyl semimetals are semimetals
-or metals whose quasiparticle
-excitation is the Weyl fermion, a
-particle that played a crucial role in quantum
-field theory but has not been observed as a
-fundamental particle in vacuum1-24. Weyl
-fermions have definite chiralities, either
-left-handed or right-handed. In a Weyl
-semimetal, the chirality can be understood as
-a topologically protected chiral charge. Weyl
-nodes of opposite chirality are separated in
-momentum space and are connected only
-through the crystal boundary by an exotic
-non-closed surface state, the Fermi arcs.
-Remarkably, Weyl fermions are robust while
-carrying currents, giving rise to exceptionally
-high mobilities. Their spins are locked to
-their momentum directions, owing to their
-character of momentum-space magnetic
-monopole configuration. Because of the
-chiral anomaly, the presence of parallel
-electric and magnetic fields can break the
-apparent conservation of the chiral charge,
-making a Weyl metal, unlike ordinary nonmagnetic
-metals, more conductive with
-an increasing magnetic field. These new
-topological phenomena beyond topological
-insulators make new physics accessible and
-suggest potential applications, despite the
-early stage of the research
+\section{Weyl semimetals}
+
+Weyl fermions are massless fermions. Weyl semimetals (WSMs) are metals/semimetals 
+in which electrons whose quasiparticle excitation is a Weyl fermion i.e. they behave 
+like a Weyl fermion to external applied fields i.e. the effective mass of the electrons
+is 0. Since effective mass is given by second derivative of bandstructure, which means that
+the dispersion relation is linear. The key characteristic is that electrons are filled till
+the nodes and they have well-defined chiralities viz. left-handed or right-handed. The 
+spin and momentum of the electrons are locked to their momentum direction. These materials
+may have a high spin-to-charge conversion efffciency \cite{Bansil2016}.
+
 \section{Outline}
-The theis is organized as follows:
+The ability to grow high quality interfaces to achieve spin transfer torque in the materials 
+is very important for continued scaling of memory and computation devices. The main motivation 
+behind this work is to demonstrate growth of high quality thin films which can be easily doped
+and  strained to fabricate functional devices and heterostructures. In this work, 
+I have demonstrated growth of weyl semimetals for the first time using molecular beam epitaxy, 
+grown heterstructures and measured the spin Hall angle of these quantum materials.
+The thesis is organized as follows:
 
 \begin{itemize}
     \item Chapter 2 discusses the theoretical background required to 
-    understand spin to charge conversion and the methods required to measure them
-    \item Chapter 3 discusses the experimental set up used to perform the experiments
-    \item Chapter 3 discusses growth and characterization of \nbse
-    \item Chapter 4 discusses the growth and characterization of weyl semimetals
-    \item Chapter 5 discusses the electrical properties of dichalcogenides and WSMs
-    \item Chapter 6 discusses the spin-tocharge conversion in WSMs and dichalcogenides
+    understand spin to charge conversion and the methods required to measure them.
+    \item Chapter 3 discusses the experimental set up used to perform the experiments. 
+    State-of-the-art molecular beam epitaxy (MBE) cluster called Multi-purpose chamber 
+    for production and analysis of nano-systems (PAPAYA) was assembled as part of my PhD.
+    has been described. The growth chamber required to grow phosphides requires a lot of 
+    care because of the high reactivity and hazardous nature of various phosphides.
+    \item Chapter 3 discusses how the \nbse\ has been grown and various characterization
+    performed to assess the crystal structure, stoichiometry and purity of the films.
+    \item Chapter 3 discusses how the weyl semimetals (WSMs) have been grown and various characterization
+    performed to assess the crystal structure, stoichiometry and purity of the films.
+    \item Chapter 5 discusses the measurements performed on the \nbse\ and WSMs using ppms.
+    The resitance vs temperature behavior of the lithographically prepared devices
+    is measured. 
+    \item Chapter 6 discusses the spin-to-charge conversion in WSMs and dichalcogenides
+    in thin film-permalloy heterstruture using STFMR.
+
 \end{itemize}

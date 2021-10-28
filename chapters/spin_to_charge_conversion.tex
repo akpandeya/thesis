@@ -1,13 +1,71 @@
 \addchapter{Spin to Charge Conversion}
-\label{spin-tocharge-conversion}
+\tlabel{spin-tocharge-conversion}
+There are various methods which can be used to estimate the spin-to-charge conversion
+efficiency of a material. I have used STFMR and second harmonic Hall analysis to do so.
+The normal metal (NM) - ferromagnet (FM) heterstructure was lithographically patterned
+into devices as shown in \tref{stfmr-pattern}. 
+
+\begin{figure}
+    \centering
+    \ig{0.6}{stfmr.png}
+    \tlabel{fig:stfmr-pattern}
+    \caption{The STFMR design patterns}
+\end{figure}
+
+\begin{figure}
+   
+    \centering
+    \subfloat[]{
+        \ig{0.45}{nbse2_stfmr_f_dep.pdf}
+        \tlabel{stfmr-nbse2-f}
+    }
+    \subfloat[]{
+        \ig{0.45}{NbSe2_kittel.png}
+        \tlabel{stfmr-nbse2-kittel}
+    } \\
+    \subfloat[]{
+        \ig{0.45}{NbSe2_deltaH.png}
+        \tlabel{stfmr-nbse2-kittel}
+    }
+    \subfloat[]{
+        \ig{0.45}{NbSe2_stfmr_delta_delta.png}
+        \tlabel{stfmr-nbse2-delta-delta}
+    }
+    \caption{ 
+        \sfA~ STMFR mixed voltage of \nbse\ at various frequencies.
+        \sfB~ Kittel fitting for determination of effective magnetization of Py in \nbse/
+        /Py bilayer.
+        \sfC~  Linewidth vs frequency of \nbse\ in \nbse/
+        /Py bilayer.
+        \sfD~ Linewidth boroadening vs current at positive and negative field during
+        STFMR measurement.
+    }
+    \tlabel{fig:stmfr-nbse2}
+\end{figure}
+
+\section{Second harmonic Hall of \nbse}
+The seond harmonic signal is fitted with according to the equations described
+in \tref{spintronics-and-quantum-materials}. The magnetization is assumed to
+be uniform while the transverse voltage is calculated using
+standard expressions for the AHE, PHE, and ANE. The
+simulations are repeated for positive and negative dc currents
+forwhich the half of the difference and the average of these two
+signals correspond to the equilibrium (current independent)
+and current induced signals, respectively. This is equivalent
+to Fourier-transformed first and second harmonic signals in
+an ac current injection measurement. Note that, relative to
+the simulations and depending on the system under study,
+the direction and amplitude of the torques and ANE can
+change sign in the experiment.
+
+
 
 \section{STFMR of \nbse}
 
-\section{Second Harmonic Hall of \nbse}
+The gilbert damping of the permalloy films was found to be around 0.0085 $\pm$ 0.0003 
+for all the films. 
 
-\section{STFMR of \nbse}
+% \section{Second Harmonic of Weyl semimetals}
 
-\section{Second Harmonic of Weyl Semimetals}
-
-\section{Comparison of different materials}
+% \section{Comparison of different materials}
 

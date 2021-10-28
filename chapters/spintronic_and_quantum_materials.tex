@@ -1,59 +1,155 @@
-\addchapter{Spintronics and Quantum Materials}
-\label{spintronics-and-quantum-materials}
+\addchapter{Spintronics and quantum materials}
+\tlabel{ch:spintronics-and-quantum-materials}
 
-\section{Spin current - Two current model}
-At a very basic level, spin current if net transfer of spins from one point to another. 
-Spin Current is actually defined as a tensor $q_ij$, where $i$ denotes the direction of 
-flow of spin current and j denotes the which component of spin is flowing[7]. The indices 
-$i$ and $j$ are the directions in the 3D space. We can, in principle, have an net spin current
+\section{Spin current - two current model}
+At a very basic level, spin current is net transfer of spins from one point to another. 
+Spin current is actually defined as a tensor $q_{ij}$, where $i$ denotes the direction of 
+flow of spin current and j denotes the which component of spin is flowing. The indices 
+$i$ and $j$ are the directions in the 3D space. We can, in principle, have a net spin current
 without any flow of charge current, if equal amount of up and down electron are moving in 
-opposite direction. That is why these are often touted as dissipationless[8]. But in reality, 
+opposite direction. That is why these are often touted as dissipationless. But in reality, 
 one always needs some amount of charge current to create the spin current in the first place 
-which should be taken into consideration for making a fair comparison.
+which should be taken into consideration for making a fair comparison \cite{spintronic-sarma}.
 
 There can be a net spin current if there is an imbalance between the up spin and down spin 
-flowing in the opposite direction to each other. Let us define electrical spin polarization 
-$P_j$ in the direction j as follows:
+flowing in the opposite direction to each other. The electrical spin polarization
+$P_j$ in the direction $j$  can be defined as follows:
 \begin{equation}
     \centering
     \tlabel{spin-pol-def}
     P_j=\frac{n^{\uparrow}-n^{\downarrow}}{n^{\uparrow}+n^{\downarrow}}
 \end{equation}
 
-\tref{spin-pol-def}
-
-
 \section{How to create spin current?}
 
-We can create spin current using many methods. One of the most simple methods is to take 
+The spin current can be created using many methods. One of the simplest methods is to take 
 a ferromagnet and pass current through it and inject the current coming out of the 
-ferromagnet into wherever we might need[9]. But this is a fairly inefficient method. 
+ferromagnet into wherever we might need (). But this is a fairly inefficient method. 
 There are other methods like spin pumping, spin Hall effect and inverse spin galvanic 
-effect (Rashba-Edelstein effect) etc. Let us discuss these methods in detail.
+effect (Rashba-Edelstein effect) etc. These methods will be described in the following chapter.
 
-\section{How to measure spin current?}
+\subsection{Spin Hall effect (SHE)}
 
-Future spintronic circuits will use the spin orientation of an electron current to store and manipulate information. Such spin-polarized currents, however, cannot be directly observed and are typically characterized using indirect techniques. Zi Qiu at the University of California, Berkeley, and colleagues have now demonstrated that x-ray pulses from a synchrotron source can be used to measure the precession of spins in a material, which directly reveals the flow of a spin current. The technique allowed the researchers to observe a spin current as it propagated through different layers of materials.
+\begin{figure}
+    \ig{0.5}{SHE.pdf}
+    \tlabel{she}
+    \caption{Schematic of SHE (blue dots represent electron with up spin and
+    red dots represent the electrons with down spin)}
+\end{figure}
+The generation of transverse spin current on passing electrical current through a metal/semimetal is called
+\textit{Spin Hall Effect}(SHE). The material must have spin-orbit coupling to show SHE. The current 
+density ($\vb{J}$) and spin current density ($J_{ij}$) are given by:
 
-Spin currents are generally probed using measurements of the effects they produce in the metals through which they flow. They can, for instance, create a voltage drop perpendicular to the direction of the spin current or a torque that turns the magnetization direction of a magnetic film. However, these indirect measurements are often ambiguous because they are influenced by factors other than the spin current, such as magnetic proximity effects.
+\begin{equation}
+    \tlabel{current-density}
+    \vb{J}/e = \mu n e\vb{E} + D \vb{\nabla} n + \beta \vb{E \times P} + 
+    \delta \vb{\nabla \times P}
+\end{equation}
 
+\begin{equation}
+    \tlabel{spin-density}
+    J_{ij} = - \mu E_{i} P_{j} + -D \frac{\partial P_{j}}{\partial x_{j}} + 
+    \varepsilon_{ijk} \left(\beta n E_{k} + \delta \frac{\partial n}{\partial x_{k}}\right)
+\end{equation}
 
-\section{Landu-Lifshitz-Gilbert Equation}
-The magnetization of a sample experiences a torque perpendicular to the direction of 
-applied field and the direction of magnetization. In absence of any damping the magnetization 
-can keep precessing around the applied field forever. But in real materials the radius of 
-precession keeps decreasing and eventually all the magnetizations point towards the applied 
-magnetic field.  
+\begin{equation}
+    \tlabel{continuity}
+    \partialderivative{P_{j}}{t} + \partialderivative{J_{ij}}{x_{i}} + 
+    \partialderivative{P_{j}}{\tau_{s}} = 0
+\end{equation}
+
+Here, $J_{ij}$ means spin current with electrons polarized in $j$ direction and the spin current is
+is flowing in $i$ direction, $\mu$ is the mobility of electrons, $n$ is the density of electrons, 
+$\vb{P}$ is the vector of spin polarization, $i, j, k \in (x, y, z)$ and $\varepsilon$ is the 
+unit antisymmetric matrix. \Tref{current-density} and \tref{spin-density} along with the continuity
+equation (\tref{continuity}) give the complete pheomenological expressions for the current density and 
+spin density.
+
+The spin density relates to electric field as follows:
+\begin{equation}
+    J_{ij} = \sigma{ij} E_{i}
+\end{equation}
+
+where $\sigma{ij}$ is called spin hall conductivity. There are three microscopic mechanisms 
+proposed for SHE and each of them contribute to the spin hall conductivity (SHC) \cite{Hirsch1999, Dyakonov2009, Sinova2015}.
+
+\begin{enumerate}
+    \item Intrinsic contribution: This contribution to the SHC depends only on the bandstructure
+    of the material. For example, a Rashba like system may lead to spin polarization on the surface 
+    when electric current is passed through it. It is therefore well defined for a given material
+    and can be calculated \textit{ab-initio}.
+    \item Skew scattering contribution: It arises due to spin-orbit coupling of the electrons and imurities.
+    It is defined as the contribution to the SHE which is proportional to the lifetime of a Bloch state. 
+    It usually dominates in the  nearly perfect crystals.
+    \item Side jump contribution: The elctron od opposite spins are deflected to opposite directions
+    when approaching and leaving the impurity due to the electric fields of the impurity. Its 
+    conntribution is defined as difference of total spin hall conductivity from the sum of intrinsic 
+    and skew mechanism part.
+\end{enumerate}
+
+We usually make a heterostructure of a magnetic material and spin-orbit torque material. 
+How does this spin current affect the magnetization of the magnetic material? Landau-Lifshitz-Gilbert 
+equation is disucssed in the following section in order to understand this.
+
+% \section{How to measure spin current?}
+
+% Spin current cannot, of course, be measured directly, hence we need convert to spin current into 
+% charge current. The inverse phenomenon to the SHE is called Inverse Spin Hall Effect (ISHE).
+
+\section{Landau-Lifshitz-Gilbert equation}
+\tlabel{llg-section}
+The magnetization of a magnetic material experiences a torque perpendicular to the direction of 
+applied field and the direction of magnetization. The magnetization can keep precessing around 
+the applied field forever in absence of any damping . But in real materials the radius of 
+precession keeps decreasing and eventually the magnetization points towards the applied 
+magnetic field.  The magnetization ($\mbold$) changes with effective field ($\hbold$) acoording
+to following equation which is known as Landau-Lifshitz-Gilbert equation \cite{Hickey2009}:
 
 \begin{equation}
     \tlabel{llg}
     \mdot = -\gamma(\mbold \times \hbold)+ \frac{\alpha}{M} \left(\mbold \times \mdot)\right)
 \end{equation}
+where $\alpha$ is Gilbert damping parameter. 
+Slonczewski suggested a correction to term to the above equation when spin current (${J_{s}}$) in 
+$\hat{\sigma}$ is the direction of injected spin current pumped into the material. 
 
-\section{Spin-Torque Ferrmomagnetic Resonance - STFMR}
+\begin{eqnarray} \nonumber
+    \tlabel{slonczewski}
+    \mdot &=& -\gamma(\mbold \times \hbold) + \frac{\alpha}{M} \left(\mbold \times \mdot)\right) +
+             \gamma \frac{\hbar}{2e \mu_{0} M_{s} t} \times J_{s} (\mbold \times \hat{\sigma} \times \vb{M})\\
+            && - \left( \gamma \vb{M} \times \vb{H_{ref}} \right)
+\end{eqnarray}
+
+When a current is passed through a heterstructure of magnetic material and spin Hall material,
+the spin Hall material produces spin current which diffuses into the magnetic layer. The change
+in behavior of magnetic material may tell us how much spin current was produced. And, thus, we can
+estimate the spin to charge conversion efficiency. Two such techniques are discussed below: 
+(i) Spin Torques Ferromagnetic Resonance (STFMR) \cite{Resonance2019} and (ii) Second Harmonic Hall Measurement \cite{Harder2016, Avci2014f}.
+
+
+\section{Spin torque ferrmomagnetic resonance - STFMR}
+
+\begin{figure}
+    \ig{0.5}{stfmr-schematic.png}
+    \tlabel{stfmr}
+    \caption{
+        STFMR Schematic
+    }
+\end{figure}
+
+A typical schematic of STFMR is shown in \tref{stfmr}. Magnetic field is applied in an in-plane
+direction such that saturation magnetisation is reached. This system has a "natural frequency" 
+of precession which depends on the applied magnetic field and the relative permeability of the magnetic
+material. When an rf current of the same frequency is applied the system goes into resonance.
+When we apply a dc current in addition to the rf current the resonance properties of the system is changed.
+In particular, we can change the linewidth of the resonance by changing the amount of dc current.
+In this resonance experiment it is impractical to sweep the applied frequency because the 
+resistance of system also changes with the frequency. That is why sweep the natural frequency by
+sweeping the applied magnetic field. Unless otherwise stated, in our experiments we keep the applied
+field at 45 \degree or 135 \degree to the current diection \cite{Resonance2019}.
+
 When a dc magnetic field $H_{ext}$ is sweeped in the STFMR configuration, the mixing 
 voltage [10], can be expressed as in \tref{llg}:
-
 \begin{equation}
     \tlabel{vmix}
     V_{mix} = V_{0} + V_{sym} \lorsym + V_{as} \lorasym
@@ -68,7 +164,7 @@ fit effective magnetization using Kittel formula [11] using \tref{vmix}.
     f_{res} = \frac{\gamma}{4\pi} \sqrt{(H_{res} + H_{0})(H_{res} + H_{0} + M_{eff})}
 \end{equation}
 
-The Gilbert damping can be extracted from the linewidth of the resonance peak [11] using equation \tref{gilbert}.
+The Gilbert damping can be extracted from the linewidth of the resonance peak [11] using \tref{gilbert}.
 
 \begin{equation}
     \tlabel{gilbert}
@@ -110,6 +206,7 @@ The \tref{deltaDeltaH} can be rearranged to get an expression of $\Delta J_{s}$:
 
 We can assume a simple model of parallel connection between the ferromagnetic layer and 
 the normal metal layer to find out the current distribution within the bilayer.
+
 
 \begin{figure}
    
@@ -156,12 +253,12 @@ Using \tref{jseq} and \tref{jnmeq} , we have
 
 This is the final relation which we use to calculate the Spin-Hall ratio in our experiments.
 
-\section{Second Harmonic Hall}
+\section{Second harmonic Hall}
 
 Let us take a hall bar of NM-FM heterostructure and pass ac current ($I_{0} \sinwt $) 
 through it in presence of an in-plane magnetic field ($B_0$) and measure transversal voltage 
 ($V_{xy}(t)$) across it. The effective magnetic field acting on the sample will have both ac
- and dc components:
+ and dc components \cite{Avci2014f}:
 
 \begin{equation}
     \vb{B} = \vb{B_{DC}} + \vb{B_{ac}(t)}
@@ -234,10 +331,10 @@ will have AHE and PHE effect contributions[14]:
 The second harmonic signal has three major source contributions:
 
 \begin{enumerate}
-    \item Contribution due to Oerested Field
+    \item Contribution due to Oerested field
     \item Contribution due to torque on  the magnetization of FM due to the spin current 
     from the NM
-    \item ontribution due to the thermal gradient along the substrate to the top layer of
+    \item Contribution due to the thermal gradient along the substrate to the top layer of
      the film
 \end{enumerate}
 
@@ -322,4 +419,4 @@ The simulation of the above equation gives following result.
 The raw data is symmetrized before fitting to get rid of unwanted contrinutions 
 due to misalignement of Hall branches, or misalignment of sample with respect 
 to external fields. The odd part of the second harmonic signal and the even
-part of the first harmonic signal is take before fitting the data.
+part of the first harmonic signal is taken before fitting the data.
